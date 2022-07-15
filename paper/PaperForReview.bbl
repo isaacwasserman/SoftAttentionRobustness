@@ -1,0 +1,111 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{NIH-AI}
+Kanadpriya Basu, Ritwik Sinha, Aihui Ong, and Treena Basu.
+\newblock Artificial intelligence: How is it changing medical sciences and its
+  future?
+\newblock {\em Indian J. Dermatol.}, 65(5):365--370, Sept. 2020.
+
+\bibitem{AI-CDSS}
+Hannah Bleher and Matthias Braun.
+\newblock Diffused responsibility: attributions of responsibility in the use of
+  ai-driven clinical decision support systems.
+\newblock {\em AI and Ethics}, Jan 2022.
+
+\bibitem{RACL}
+Minjing Dong, Yanxi Li, Yunhe Wang, and Chang Xu.
+\newblock {Adversarially Robust Neural Architectures}.
+\newblock {\em arXiv}, 2020.
+
+\bibitem{Finlayson}
+Samuel~G. Finlayson, John~D. Bowers, Joichi Ito, Jonathan~L. Zittrain,
+  Andrew~L. Beam, and Isaac~S. Kohane.
+\newblock {Adversarial attacks on medical machine learning}.
+\newblock {\em Science}, 363(6433):1287--1289, 2019.
+
+\bibitem{ResNet}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, June 2016.
+
+\bibitem{Natural-Adv}
+Dan Hendrycks, Kevin Zhao, Steven Basart, Jacob Steinhardt, and Dawn Song.
+\newblock Natural adversarial examples.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 15262--15271, June 2021.
+
+\bibitem{Huang}
+Hanxun Huang, Yisen Wang, Sarah~Monazam Erfani, Quanquan Gu, James Bailey, and
+  Xingjun Ma.
+\newblock {Exploring Architectural Ingredients of Adversarially Robust Deep
+  Neural Networks}.
+\newblock In {\em Advances in Neural Information Processing Systems}, volume~34
+  of {\em arXiv}, pages 5545--5559. Curran Associates, Inc., 2021.
+
+\bibitem{alphafold}
+John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov,
+  Olaf Ronneberger, Kathryn Tunyasuvunakool, Russ Bates, Augustin
+  {\v{Z}}{\'i}dek, Anna Potapenko, Alex Bridgland, Clemens Meyer, Simon A.~A.
+  Kohl, Andrew~J. Ballard, Andrew Cowie, Bernardino Romera-Paredes, Stanislav
+  Nikolov, Rishub Jain, Jonas Adler, Trevor Back, Stig Petersen, David Reiman,
+  Ellen Clancy, Michal Zielinski, Martin Steinegger, Michalina Pacholska, Tamas
+  Berghammer, Sebastian Bodenstein, David Silver, Oriol Vinyals, Andrew~W.
+  Senior, Koray Kavukcuoglu, Pushmeet Kohli, and Demis Hassabis.
+\newblock Highly accurate protein structure prediction with alphafold.
+\newblock {\em Nature}, 596(7873):583--589, Aug 2021.
+
+\bibitem{MaNiu}
+Xingjun Ma, Yuhao Niu, Lin Gu, Yisen Wang, Yitian Zhao, James Bailey, and Feng
+  Lu.
+\newblock {Understanding adversarial attacks on deep learning based medical
+  image analysis systems}.
+\newblock {\em Pattern Recognition}, 110:107332, 2021.
+
+\bibitem{Madry}
+Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and
+  Adrian Vladu.
+\newblock {Towards Deep Learning Models Resistant to Adversarial Attacks}.
+\newblock {\em arXiv}, 2017.
+
+\bibitem{Paschali}
+Magdalini Paschali, Sailesh Conjeti, Fernando Navarro, and Nassir Navab.
+\newblock {Medical Image Computing and Computer Assisted Intervention –
+  MICCAI 2018, 21st International Conference, Granada, Spain, September 16-20,
+  2018, Proceedings, Part I}.
+\newblock {\em Lecture Notes in Computer Science}, pages 493--501, 2018.
+
+\bibitem{muzero}
+Julian Schrittwieser, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan,
+  Laurent Sifre, Simon Schmitt, Arthur Guez, Edward Lockhart, Demis Hassabis,
+  Thore Graepel, Timothy Lillicrap, and David Silver.
+\newblock Mastering atari, go, chess and shogi by planning with a learned
+  model.
+\newblock {\em Nature}, 588(7839):604--609, Dec 2020.
+
+\bibitem{Intro-Adv}
+Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan,
+  Ian Goodfellow, and Rob Fergus.
+\newblock Intriguing properties of neural networks.
+\newblock In {\em International Conference on Learning Representations}, 2014.
+
+\bibitem{Med-XAI}
+Erico Tjoa and Cuntai Guan.
+\newblock A survey on explainable artificial intelligence (xai): Toward medical
+  xai.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
+  32(11):4793--4813, 2021.
+
+\bibitem{RobustVsAccuracy}
+Dimitris Tsipras, Shibani Santurkar, Logan Engstrom, Alexander Turner, and
+  Aleksander Madry.
+\newblock {Robustness May Be at Odds with Accuracy}.
+\newblock {\em arXiv}, 2018.
+
+\bibitem{medical-cnn-survey}
+Hang Yu, Laurence~T. Yang, Qingchen Zhang, David Armstrong, and M.~Jamal Deen.
+\newblock {Convolutional neural networks for medical image analysis:
+  State-of-the-art, comparisons, improvement and perspectives}.
+\newblock {\em Neurocomputing}, 444:92--110, 2021.
+
+\end{thebibliography}
