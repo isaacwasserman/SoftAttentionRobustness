@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex PaperForReview"] 1657919578 "PaperForReview.aux" "PaperForReview.bbl" "PaperForReview" 1657920045
+["bibtex PaperForReview"] 1658180156 "PaperForReview.aux" "PaperForReview.bbl" "PaperForReview" 1658180157
   "./ieee_fullname.bst" 1620858020 19905 72b73f4cb1c51eaa1a7af8ecad2b6bfb ""
-  "PaperForReview.aux" 1657920045 3244 3813712c836f634406e61b1e6b6bf4f1 "pdflatex"
-  "egbib.bib" 1657915729 24061 9def94027f1490dd3c82055b0da0cb6c ""
+  "PaperForReview.aux" 1658180156 6296 ad3b1fd9bac39f067720d6c93110d6d6 "pdflatex"
+  "egbib.bib" 1658179010 44281 8fc8cd75938c35a06af5e37b34f9dbac ""
   (generated)
   "PaperForReview.bbl"
   "PaperForReview.blg"
-["pdflatex"] 1657920044 "/Users/isaac/Desktop/SoftAttentionRobustness/paper/PaperForReview.tex" "PaperForReview.pdf" "PaperForReview" 1657920045
-  "/Users/isaac/Desktop/SoftAttentionRobustness/paper/PaperForReview.tex" 1657920044 11271 344453f910c3c380e9ccde8f9dbce275 ""
+["pdflatex"] 1658180156 "/Users/isaac/Desktop/SoftAttentionRobustness/paper/PaperForReview.tex" "PaperForReview.pdf" "PaperForReview" 1658180157
+  "/Users/isaac/Desktop/SoftAttentionRobustness/paper/PaperForReview.tex" 1658180155 15601 f1e624039d323278b15cd6bc8add1f68 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -126,11 +126,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1642729285 4379201 880d78f4a2bde4f491e7d718ab91f390 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1642729323 2796592 00dc472a5dac70e144a006775cbbe283 ""
   "/usr/local/texlive/2021/texmf.cnf" 1642729278 577 4c1911a7228e554c6032256d3cf5567d ""
-  "PaperForReview.aux" 1657920045 3244 3813712c836f634406e61b1e6b6bf4f1 "pdflatex"
-  "PaperForReview.bbl" 1657919578 4716 559b81af0c268bed9a4308cf0327b8b0 "bibtex PaperForReview"
-  "PaperForReview.brf" 1657920045 828 4f7f5c29e8bd9cb21e817ef3404f3844 "pdflatex"
-  "PaperForReview.out" 1657920045 748 45609d25ad286e67cca55a176f58b792 "pdflatex"
-  "PaperForReview.tex" 1657920044 11271 344453f910c3c380e9ccde8f9dbce275 ""
+  "PaperForReview.aux" 1658180156 6296 ad3b1fd9bac39f067720d6c93110d6d6 "pdflatex"
+  "PaperForReview.bbl" 1658180156 8563 ade0fe369f32a55d9c72366cded3b141 "bibtex PaperForReview"
+  "PaperForReview.brf" 1658180156 1993 9ee933e9df067464a593d3f11afe8580 "pdflatex"
+  "PaperForReview.out" 1658180156 1450 eaeba2917525a1a653b633219096c7c3 "pdflatex"
+  "PaperForReview.tex" 1658180155 15601 f1e624039d323278b15cd6bc8add1f68 ""
   "cvpr.sty" 1629709715 22663 ae69ac60d981219f288927532f3b519c ""
   (generated)
   "PaperForReview.aux"

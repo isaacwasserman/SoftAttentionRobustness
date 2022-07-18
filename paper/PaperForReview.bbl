@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}\itemsep=-1pt
 
+\bibitem{AttentiveCNNRobustness}
+Prachi Agrawal, Narinder~Singh Punn, Sanjay~Kumar Sonbhadra, and Sonali
+  Agarwal.
+\newblock {Impact of Attention on Adversarial Robustness of Image
+  Classification Models}.
+\newblock {\em 2021 IEEE International Conference on Big Data (Big Data)},
+  00:3013--3019, 2021.
+
 \bibitem{NIH-AI}
 Kanadpriya Basu, Ritwik Sinha, Aihui Ong, and Treena Basu.
 \newblock Artificial intelligence: How is it changing medical sciences and its
@@ -12,9 +20,23 @@ Hannah Bleher and Matthias Braun.
   ai-driven clinical decision support systems.
 \newblock {\em AI and Ethics}, Jan 2022.
 
+\bibitem{AttentionSkinCancerClassification}
+Soumyya~Kanti Datta, Mohammad~Abuzar Shaikh, Sargur~N Srihari, and Mingchen
+  Gao.
+\newblock {Soft-Attention Improves Skin Cancer Classification Performance}.
+\newblock {\em arXiv}, 2021.
+
 \bibitem{RACL}
 Minjing Dong, Yanxi Li, Yunhe Wang, and Chang Xu.
 \newblock {Adversarially Robust Neural Architectures}.
+\newblock {\em arXiv}, 2020.
+
+\bibitem{ViT}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
+  Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg
+  Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock {An Image is Worth 16x16 Words: Transformers for Image Recognition at
+  Scale}.
 \newblock {\em arXiv}, 2020.
 
 \bibitem{Finlayson}
@@ -22,6 +44,14 @@ Samuel~G. Finlayson, John~D. Bowers, Joichi Ito, Jonathan~L. Zittrain,
   Andrew~L. Beam, and Isaac~S. Kohane.
 \newblock {Adversarial attacks on medical machine learning}.
 \newblock {\em Science}, 363(6433):1287--1289, 2019.
+
+\bibitem{VisionTransformerSurvey}
+Kai Han, Yunhe Wang, Hanting Chen, Xinghao Chen, Jianyuan Guo, Zhenhua Liu,
+  Yehui Tang, An Xiao, Chunjing Xu, Yixing Xu, Zhaohui Yang, Yiman Zhang, and
+  Dacheng Tao.
+\newblock {A Survey on Vision Transformer}.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  PP(99):1--1, 2022.
 
 \bibitem{ResNet}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
@@ -34,6 +64,11 @@ Dan Hendrycks, Kevin Zhao, Steven Basart, Jacob Steinhardt, and Dawn Song.
 \newblock Natural adversarial examples.
 \newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
   Pattern Recognition (CVPR)}, pages 15262--15271, June 2021.
+
+\bibitem{DSRNA}
+Ramtin Hosseini, Xingyi Yang, and Pengtao Xie.
+\newblock {DSRNA: Differentiable Search of Robust Neural Architectures}.
+\newblock {\em arXiv}, 2020.
 
 \bibitem{Huang}
 Hanxun Huang, Yisen Wang, Sarah~Monazam Erfani, Quanquan Gu, James Bailey, and
@@ -55,6 +90,20 @@ John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov,
 \newblock Highly accurate protein structure prediction with alphafold.
 \newblock {\em Nature}, 596(7873):583--589, Aug 2021.
 
+\bibitem{MORAS}
+Jia Liu and Yaochu Jin.
+\newblock {Multi-objective search of robust neural architectures against
+  multiple types of adversarial attacks}.
+\newblock {\em Neurocomputing}, 453:73--84, 2021.
+
+\bibitem{Swin}
+Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, Zheng Zhang, Stephen Lin, and
+  Baining Guo.
+\newblock {Swin Transformer: Hierarchical Vision Transformer using Shifted
+  Windows}.
+\newblock {\em 2021 IEEE/CVF International Conference on Computer Vision
+  (ICCV)}, 00:9992--10002, 2021.
+
 \bibitem{MaNiu}
 Xingjun Ma, Yuhao Niu, Lin Gu, Yisen Wang, Yitian Zhao, James Bailey, and Feng
   Lu.
@@ -67,6 +116,12 @@ Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and
   Adrian Vladu.
 \newblock {Towards Deep Learning Models Resistant to Adversarial Attacks}.
 \newblock {\em arXiv}, 2017.
+
+\bibitem{AdvRush}
+Jisoo Mok, Byunggook Na, Hyeokjun Choe, and Sungroh Yoon.
+\newblock {AdvRush: Searching for Adversarially Robust Neural Architectures}.
+\newblock {\em 2021 IEEE/CVF International Conference on Computer Vision
+  (ICCV)}, 00:12302--12312, 2021.
 
 \bibitem{Paschali}
 Magdalini Paschali, Sailesh Conjeti, Fernando Navarro, and Nassir Navab.
@@ -83,6 +138,11 @@ Julian Schrittwieser, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan,
   model.
 \newblock {\em Nature}, 588(7839):604--609, Dec 2020.
 
+\bibitem{RobustTransformers}
+Rulin Shao, Zhouxing Shi, Jinfeng Yi, Pin-Yu Chen, and Cho-Jui Hsieh.
+\newblock {On the Adversarial Robustness of Vision Transformers}.
+\newblock {\em arXiv}, 2021.
+
 \bibitem{Intro-Adv}
 Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan,
   Ian Goodfellow, and Rob Fergus.
@@ -96,16 +156,48 @@ Erico Tjoa and Cuntai Guan.
 \newblock {\em IEEE Transactions on Neural Networks and Learning Systems},
   32(11):4793--4813, 2021.
 
+\bibitem{DeiT}
+Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre
+  Sablayrolles, and Hervé Jégou.
+\newblock {Training data-efficient image transformers \& distillation through
+  attention}.
+\newblock {\em arXiv}, 2020.
+
 \bibitem{RobustVsAccuracy}
 Dimitris Tsipras, Shibani Santurkar, Logan Engstrom, Alexander Turner, and
   Aleksander Madry.
 \newblock {Robustness May Be at Odds with Accuracy}.
 \newblock {\em arXiv}, 2018.
 
+\bibitem{PVT}
+Wenhai Wang, Enze Xie, Xiang Li, Deng-Ping Fan, Kaitao Song, Ding Liang, Tong
+  Lu, Ping Luo, and Ling Shao.
+\newblock {Pyramid Vision Transformer: A Versatile Backbone for Dense
+  Prediction without Convolutions}.
+\newblock {\em 2021 IEEE/CVF International Conference on Computer Vision
+  (ICCV)}, 00:548--558, 2021.
+
+\bibitem{AttentionForFineGrainedClassification}
+Tianjun Xiao, Yichong Xu, Kuiyuan Yang, Jiaxing Zhang, Yuxin Peng, and Zheng
+  Zhang.
+\newblock {The Application of Two-level Attention Models in Deep Convolutional
+  Neural Network for Fine-grained Image Classification}.
+\newblock {\em 2015 IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 842--850, 2015.
+
 \bibitem{medical-cnn-survey}
 Hang Yu, Laurence~T. Yang, Qingchen Zhang, David Armstrong, and M.~Jamal Deen.
 \newblock {Convolutional neural networks for medical image analysis:
   State-of-the-art, comparisons, improvement and perspectives}.
 \newblock {\em Neurocomputing}, 444:92--110, 2021.
+
+\bibitem{UnderstandingTransformerRobustness}
+Daquan Zhou, Zhiding Yu, Enze Xie, Chaowei Xiao, Animashree Anandkumar, Jiashi
+  Feng, and Jose~M. Alvarez.
+\newblock Understanding the robustness in vision transformers.
+\newblock In Kamalika Chaudhuri, Stefanie Jegelka, Le Song, Csaba Szepesvari,
+  Gang Niu, and Sivan Sabato, editors, {\em Proceedings of the 39th
+  International Conference on Machine Learning}, volume 162 of {\em Proceedings
+  of Machine Learning Research}, pages 27378--27394. PMLR, 17--23 Jul 2022.
 
 \end{thebibliography}

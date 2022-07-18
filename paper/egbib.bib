@@ -322,3 +322,146 @@ pages = {12302--12312},
 volume = {00}, 
 keywords = {}
 }
+
+@article{MORAS, 
+year = {2021}, 
+title = {{Multi-objective search of robust neural architectures against multiple types of adversarial attacks}}, 
+author = {Liu, Jia and Jin, Yaochu}, 
+journal = {Neurocomputing}, 
+issn = {0925-2312}, 
+doi = {10.1016/j.neucom.2021.04.111}, 
+abstract = {{Many existing deep learning models are vulnerable to adversarial examples that are imperceptible to humans. To address this issue, various methods have been proposed to design network architectures that are robust to one particular type of adversarial attacks. It is practically impossible, however, to predict beforehand which type of attacks a machine learn model may suffer from. To address this challenge, we propose to search for deep neural architectures that are robust to five types of well-known adversarial attacks using a multi-objective evolutionary algorithm. To reduce the computational cost, a normalized error rate of a randomly chosen attack is calculated as the robustness for each newly generated neural architecture at each generation. All non-dominated network architectures obtained by the proposed method are then fully trained against randomly chosen adversarial attacks and tested on two widely used datasets. Our experimental results demonstrate the superiority of optimized neural architectures found by the proposed approach over state-of-the-art networks that are widely used in the literature in terms of the classification accuracy under different adversarial attacks.}}, 
+pages = {73--84}, 
+volume = {453}, 
+keywords = {}
+}
+
+@article{DSRNA, 
+year = {2020}, 
+title = {{DSRNA: Differentiable Search of Robust Neural Architectures}}, 
+author = {Hosseini, Ramtin and Yang, Xingyi and Xie, Pengtao}, 
+journal = {arXiv}, 
+eprint = {2012.06122}, 
+abstract = {{In deep learning applications, the architectures of deep neural networks are crucial in achieving high accuracy. Many methods have been proposed to search for high-performance neural architectures automatically. However, these searched architectures are prone to adversarial attacks. A small perturbation of the input data can render the architecture to change prediction outcomes significantly. To address this problem, we propose methods to perform differentiable search of robust neural architectures. In our methods, two differentiable metrics are defined to measure architectures' robustness, based on certified lower bound and Jacobian norm bound. Then we search for robust architectures by maximizing the robustness metrics. Different from previous approaches which aim to improve architectures' robustness in an implicit way: performing adversarial training and injecting random noise, our methods explicitly and directly maximize robustness metrics to harvest robust architectures. On CIFAR-10, ImageNet, and MNIST, we perform game-based evaluation and verification-based evaluation on the robustness of our methods. The experimental results show that our methods 1) are more robust to various norm-bound attacks than several robust NAS baselines; 2) are more accurate than baselines when there are no attacks; 3) have significantly higher certified lower bounds than baselines.}}, 
+keywords = {}
+}
+
+@article{VisionTransformerSurvey, 
+year = {2022}, 
+title = {{A Survey on Vision Transformer}}, 
+author = {Han, Kai and Wang, Yunhe and Chen, Hanting and Chen, Xinghao and Guo, Jianyuan and Liu, Zhenhua and Tang, Yehui and Xiao, An and Xu, Chunjing and Xu, Yixing and Yang, Zhaohui and Zhang, Yiman and Tao, Dacheng}, 
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+issn = {0162-8828}, 
+doi = {10.1109/tpami.2022.3152247}, 
+pmid = {35180075}, 
+eprint = {2012.12556}, 
+abstract = {{Transformer, first applied to the field of natural language processing, is a type of deep neural network mainly based on the self-attention mechanism. Thanks to its strong representation capabilities, researchers are looking at ways to apply transformer to computer vision tasks. In a variety of visual benchmarks, transformer-based models perform similar to or better than other types of networks such as convolutional and recurrent neural networks. Given its high performance and less need for vision-specific inductive bias, transformer is receiving more and more attention from the computer vision community. In this paper, we review these vision transformer models by categorizing them in different tasks and analyzing their advantages and disadvantages. The main categories we explore include the backbone network, high/mid-level vision, low-level vision, and video processing. We also include efficient transformer methods for pushing transformer into real device-based applications. Furthermore, we also take a brief look at the self-attention mechanism in computer vision, as it is the base component in transformer. Toward the end of this paper, we discuss the challenges and provide several further research directions for vision transformers.}}, 
+pages = {1--1}, 
+number = {99}, 
+volume = {PP}, 
+keywords = {}
+}
+
+@article{ViT, 
+year = {2020}, 
+title = {{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}}, 
+author = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil}, 
+journal = {arXiv}, 
+eprint = {2010.11929}, 
+abstract = {{While the Transformer architecture has become the de-facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.}}, 
+keywords = {}
+}
+
+@article{DeiT, 
+year = {2020}, 
+title = {{Training data-efficient image transformers \& distillation through attention}}, 
+author = {Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and Jégou, Hervé}, 
+journal = {arXiv}, 
+eprint = {2012.12877}, 
+abstract = {{Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We train them on a single computer in less than 3 days. Our reference vision transformer (86M parameters) achieves top-1 accuracy of 83.1\% (single-crop evaluation) on ImageNet with no external data. More importantly, we introduce a teacher-student strategy specific to transformers. It relies on a distillation token ensuring that the student learns from the teacher through attention. We show the interest of this token-based distillation, especially when using a convnet as a teacher. This leads us to report results competitive with convnets for both Imagenet (where we obtain up to 85.2\% accuracy) and when transferring to other tasks. We share our code and models.}}, 
+keywords = {}
+}
+
+@article{PVT, 
+year = {2021}, 
+title = {{Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions}}, 
+author = {Wang, Wenhai and Xie, Enze and Li, Xiang and Fan, Deng-Ping and Song, Kaitao and Liang, Ding and Lu, Tong and Luo, Ping and Shao, Ling}, 
+journal = {2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+doi = {10.1109/iccv48922.2021.00061}, 
+abstract = {{Although convolutional neural networks (CNNs) have achieved great success in computer vision, this work investigates a simpler, convolution-free backbone network use-fid for many dense prediction tasks. Unlike the recently-proposed Vision Transformer (ViT) that was designed for image classification specifically, we introduce the Pyramid Vision Transformer (PVT), which overcomes the difficulties of porting Transformer to various dense prediction tasks. PVT has several merits compared to current state of the arts. (1) Different from ViT that typically yields low-resolution outputs and incurs high computational and memory costs, PVT not only can be trained on dense partitions of an image to achieve high output resolution, which is important for dense prediction, but also uses a progressive shrinking pyramid to reduce the computations of large feature maps. (2) PVT inherits the advantages of both CNN and Transformer, making it a unified backbone for various vision tasks without convolutions, where it can be used as a direct replacement for CNN backbones. (3) We validate PVT through extensive experiments, showing that it boosts the performance of many downstream tasks, including object detection, instance and semantic segmentation. For example, with a comparable number of parameters, PVT+RetinaNet achieves 40.4 AP on the COCO dataset, surpassing ResNet50+RetinNet (36.3 AP) by 4.1 absolute AP (see Figure 2). We hope that PVT could, serre as an alternative and useful backbone for pixel-level predictions and facilitate future research.}}, 
+pages = {548--558}, 
+volume = {00}, 
+keywords = {}
+}
+
+@article{Swin, 
+year = {2021}, 
+title = {{Swin Transformer: Hierarchical Vision Transformer using Shifted Windows}}, 
+author = {Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining}, 
+journal = {2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+doi = {10.1109/iccv48922.2021.00986}, 
+abstract = {{This paper presents a new vision Transformer, called Swin Transformer, that capably serves as a general-purpose backbone for computer vision. Challenges in adapting Transformer from language to vision arise from differences between the two domains, such as large variations in the scale of visual entities and the high resolution of pixels in images compared to words in text. To address these differences, we propose a hierarchical Transformer whose representation is computed with Shifted windows. The shifted windowing scheme brings greater efficiency by limiting self-attention computation to non-overlapping local windows while also allowing for cross-window connection. This hierarchical architecture has the flexibility to model at various scales and has linear computational complexity with respect to image size. These qualities of Swin Transformer make it compatible with a broad range of vision tasks, including image classification (87.3 top-1 accuracy on ImageNet-1K) and dense prediction tasks such as object detection (58.7 box AP and 51.1 mask AP on COCO test-dev) and semantic segmentation (53.5 mIoU on ADE20K val). Its performance surpasses the previous state-of-the-art by a large margin of +2.7 box AP and +2.6 mask AP on COCO, and +3.2 mIoU on ADE20K, demonstrating the potential of Transformer-based models as vision backbones. The hierarchical design and the shifted window approach also prove beneficial for all-MLP architectures. The code and models are publicly available at https://github.com/microsoft/Swin-Transformer.}}, 
+pages = {9992--10002}, 
+volume = {00}, 
+keywords = {}
+}
+
+@article{RobustTransformers, 
+year = {2021}, 
+title = {{On the Adversarial Robustness of Vision Transformers}}, 
+author = {Shao, Rulin and Shi, Zhouxing and Yi, Jinfeng and Chen, Pin-Yu and Hsieh, Cho-Jui}, 
+journal = {arXiv}, 
+eprint = {2103.15670}, 
+abstract = {{Following the success in advancing natural language processing and understanding, transformers are expected to bring revolutionary changes to computer vision. This work provides the first and comprehensive study on the robustness of vision transformers (ViTs) against adversarial perturbations. Tested on various white-box and transfer attack settings, we find that ViTs possess better adversarial robustness when compared with convolutional neural networks (CNNs). This observation also holds for certified robustness. We summarize the following main observations contributing to the improved robustness of ViTs: 1) Features learned by ViTs contain less low-level information and are more generalizable, which contributes to superior robustness against adversarial perturbations. 2) Introducing convolutional or tokens-to-token blocks for learning low-level features in ViTs can improve classification accuracy but at the cost of adversarial robustness. 3) Increasing the proportion of transformers in the model structure (when the model consists of both transformer and CNN blocks) leads to better robustness. But for a pure transformer model, simply increasing the size or adding layers cannot guarantee a similar effect. 4) Pre-training on larger datasets does not significantly improve adversarial robustness though it is critical for training ViTs. 5) Adversarial training is also applicable to ViT for training robust models. Furthermore, feature visualization and frequency analysis are conducted for explanation. The results show that ViTs are less sensitive to high-frequency perturbations than CNNs and there is a high correlation between how well the model learns low-level features and its robustness against different frequency-based perturbations.}}, 
+keywords = {}
+}
+
+
+@InProceedings{UnderstandingTransformerRobustness,
+  title = 	 {Understanding The Robustness in Vision Transformers},
+  author =       {Zhou, Daquan and Yu, Zhiding and Xie, Enze and Xiao, Chaowei and Anandkumar, Animashree and Feng, Jiashi and Alvarez, Jose M.},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {27378--27394},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/zhou22m/zhou22m.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/zhou22m.html},
+  abstract = 	 {Recent studies show that Vision Transformers (ViTs) exhibit strong robustness against various corruptions. Although this property is partly attributed to the self-attention mechanism, there is still a lack of an explanatory framework towards a more systematic understanding. In this paper, we examine the role of self-attention in learning robust representations. Our study is motivated by the intriguing properties of self-attention in visual grouping which indicate that self-attention could promote improved mid-level representation and robustness. We thus propose a family of fully attentional networks (FANs) that incorporate self-attention in both token mixing and channel processing. We validate the design comprehensively on various hierarchical backbones. Our model with a DeiT architecture achieves a state-of-the-art 47.6% mCE on ImageNet-C with 29M parameters. We also demonstrate significantly improved robustness in two downstream tasks: semantic segmentation and object detection}
+}
+
+@article{AttentiveCNNRobustness, 
+year = {2021}, 
+title = {{Impact of Attention on Adversarial Robustness of Image Classification Models}}, 
+author = {Agrawal, Prachi and Punn, Narinder Singh and Sonbhadra, Sanjay Kumar and Agarwal, Sonali}, 
+journal = {2021 IEEE International Conference on Big Data (Big Data)}, 
+doi = {10.1109/bigdata52589.2021.9671889}, 
+abstract = {{Adversarial attacks against deep learning models have gained significant attention and recent works have pro-posed explanations for the existence of adversarial examples and techniques to defend the models against these attacks. Attention in computer vision has been used to incorporate focused learning of important features and has led to improved accuracy. Recently, models with attention mechanisms have been proposed to enhance adversarial robustness. Following this context, this work aims at a general understanding of the impact of attention on adversarial robustness. This work presents a comparative study of adversarial robustness of non-attention and attention based image classification models trained on CIFAR-10, CIFAR-100 and Fashion MNIST datasets under the popular white box and black box attacks. The experimental results show that the robustness of attention based models may be dependent on the datasets used i.e. the number of classes involved in the classification. In contrast to the datasets with less number of classes, attention based models are observed to show better robustness towards classification.}}, 
+pages = {3013--3019}, 
+volume = {00}, 
+keywords = {}
+}
+
+@article{AttentionForFineGrainedClassification, 
+year = {2015}, 
+title = {{The Application of Two-level Attention Models in Deep Convolutional Neural Network for Fine-grained Image Classification}}, 
+author = {Xiao, Tianjun and Xu, Yichong and Yang, Kuiyuan and Zhang, Jiaxing and Peng, Yuxin and Zhang, Zheng}, 
+journal = {2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+doi = {10.1109/cvpr.2015.7298685}, 
+abstract = {{Fine-grained classification is challenging because categories can only be discriminated by subtle and local differences. Variances in the pose, scale or rotation usually make the problem more difficult. Most fine-grained classification systems follow the pipeline of finding foreground object or object parts (where) to extract discriminative features (what). In this paper, we propose to apply visual attention to fine-grained classification task using deep neural network. Our pipeline integrates three types of attention: the bottom-up attention that propose candidate patches, the object-level top-down attention that selects relevant patches to a certain object, and the part-level top-down attention that localizes discriminative parts. We combine these attentions to train domain-specific deep nets, then use it to improve both the what and where aspects. Importantly, we avoid using expensive annotations like bounding box or part information from end-to-end. The weak supervision constraint makes our work easier to generalize. We have verified the effectiveness of the method on the subsets of ILSVRC2012 dataset and CUB200\_2011 dataset. Our pipeline delivered significant improvements and achieved the best accuracy under the weakest supervision condition. The performance is competitive against other methods that rely on additional annotations.}}, 
+pages = {842--850}, 
+keywords = {}
+}
+
+@article{AttentionSkinCancerClassification, 
+year = {2021}, 
+title = {{Soft-Attention Improves Skin Cancer Classification Performance}}, 
+author = {Datta, Soumyya Kanti and Shaikh, Mohammad Abuzar and Srihari, Sargur N and Gao, Mingchen}, 
+journal = {arXiv}, 
+eprint = {2105.03358}, 
+abstract = {{In clinical applications, neural networks must focus on and highlight the most important parts of an input image. Soft-Attention mechanism enables a neural network toachieve this goal. This paper investigates the effectiveness of Soft-Attention in deep neural architectures. The central aim of Soft-Attention is to boost the value of important features and suppress the noise-inducing features. We compare the performance of VGG, ResNet, InceptionResNetv2 and DenseNet architectures with and without the Soft-Attention mechanism, while classifying skin lesions. The original network when coupled with Soft-Attention outperforms the baseline[16] by 4.7\% while achieving a precision of 93.7\% on HAM10000 dataset [25]. Additionally, Soft-Attention coupling improves the sensitivity score by 3.8\% compared to baseline[31] and achieves 91.6\% on ISIC-2017 dataset [2]. The code is publicly available at github.}}, 
+keywords = {}
+}
