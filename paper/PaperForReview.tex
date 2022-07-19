@@ -15,6 +15,8 @@
 \usepackage{amssymb}
 \usepackage{booktabs}
 \usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{relsize}
 
 
 % It is strongly recommended to use hyperref, especially for the review version.
@@ -42,6 +44,11 @@
 \def\confName{CVPR}
 \def\confYear{2022}
 
+\newcommand\m[1]{
+    \ensuremath{
+        \begin{bmatrix}#1\end{bmatrix}
+        }
+    }
 
 \begin{document}
 
@@ -104,7 +111,41 @@
     \subsubsection{Clean Accuracy}
       Agrawal et al. (2022) also found that the attentive model had slightly lower clean-accuracy compared to the vanilla CNNs on CIFAR-10 and CIFAR-100 but slightly higher clean-accuracy on Fashion MNIST \cite{AttentiveCNNRobustness}. However, this finding is inconsistent with early research on the use of CNNs with attention for fine-grained classification datasets. For example, the attention-based model developed by Xiao et al. (2015) outperformed equally supervised vanilla-CNNs by 19\% \cite{AttentionForFineGrainedClassification}. As small details are incredibly salient in medical image datasets, research on fine-grained classification is especially relevant. The ability of attention mechanisms to improve the accuracy of medical image classification CNNs was confirmed by Datta et al. (2021) which appended a minimal soft-attention mechanism to five off-the-shelf pretrained CNNs and found that attention increased weighted average AUC for all but VGG16 \cite{AttentionSkinCancerClassification}.
 
-      Based on the findings above, it is possible that the use of attention is a minimal architectural feature that challenges the findings of Tsipras et al. (2018) \cite{RobustVsAccuracy} by improving clean- and robust-accuracy simultaneously.
+      Based on the findings above, it appears possible that the use of attention is a minimal architectural feature that challenges the findings of Tsipras et al. (2018) \cite{RobustVsAccuracy} by improving clean- and robust-accuracy simultaneously.
+
+  \section{Method}
+    \subsection{Datasets}
+      Benchmark medical image classification tasks were chosen based on their frequent use in similar studies, such as Ma and Niu et al. (2021) \cite{MaNiu} and Finlayson et al. (2019) \cite{Finlayson}. These tasks are diabetic retinopathy detection from fundoscopy images, pneumothorax detection from chest x-rays, and skin lesion classification from dermatoscopy images. Fundoscopy images were sourced from the popular Kaggle diabetic retinopathy detection competition \cite{KaggleDR}. Chest x-rays used were from the ChestX-Ray14 dataset \cite{ChestX-Ray14}. Unlike Finlayson et al. (2019) \cite{Finlayson} and Ma and Niu et al. \cite{MaNiu} (2021), dermatoscopy images were not sourced directly from ISIC \cite{ISIC} and were instead taken from the HAM10000 dataset \cite{HAM10000} which draws from the ISIC archive; this choice was made to more closely resemble the setup of Datta et al. (2021) \cite{AttentionSkinCancerClassification}.
+
+    \subsection{Preprocessing}
+      All images were resized to the ImageNet standard $224 \times 224$ pixels \cite{ImageNet} and preprocessed according to the specifications of the TensorFlow \cite{TensorFlow} implementation of ResNet-50 \cite{ResNet}, which include subtracting 123.68, 116.779, and 103.939 from the red, green, and blue channels respectively \cite{ResNetPreprocessingImplementation}.
+
+      The fundoscopy and chest x-ray datasets were distilled from their original multiclass classification form into binary classification datasets. For the fundoscopy images, the "No DR" and "Mild DR" classes were considered negative while the "Moderate," "Severe," and "Proliferative DR" classes were considered positive. The chest x-ray dataset originally included 14 non-exclusive classes, but for the purposes of this study, all images labeled as having a pneumothorax present were labeled positive, while other images were simply labeled negative. No changes were made to the classes of the dermatoscopy dataset.
+
+      In an attempt to solve for the relatively large range in image contrast of the grayscale chest x-rays, all images were put through a gaussian filtering pipeline that maximized the prominence of edges and shadowed areas. Images are first min-max normalized to the range $[0,255]$. A gaussian blur is applied to a copy of this image; the kernel size of the filter is computed based on parameters $\sigma_x=20,\,\,\, \sigma_y=0$. This blurred image $\text{blur}(x)$ is subsequently added to the original normalized image $x$ according to the following formula $x' = 4x - 4(\text{blur}(x)) + 128$.
+
+      \begin{figure}[h!]
+        \centering
+        $
+        \begin{array}{l}
+        \includegraphics[width=0.4\linewidth]{graphics/unprocessedxray.png}
+        \end{array}
+        \mathlarger{\mathlarger{\mathlarger{\mathlarger{\rightarrow}}}}
+        \begin{array}{l}
+          \includegraphics[width=0.4\linewidth]{graphics/processedxray.jpg}
+        \end{array}
+        $
+        \caption{Visualization of the chest x-ray image preprocessing pipeline}
+      \end{figure}
+
+      This pipeline was initially used for the fundoscopy images as well, but early results revealed that this type of processing was not well suited to the task.
+
+    \subsection{Network Architecture}
+      Two models were trained for each dataset, one with a soft attention block and one without. The architecture of each model was based on the TensorFlow \cite{TensorFlow} implementation of ResNet-50 \cite{ResNetImplementation}. ResNet-50 was instantiated with the top block included, initial weights based on ImageNet \cite{ImageNet} pretraining, and class count set to 1000. The final three layers of the network were removed. In the models without attention, these final layers were replaced with a 2D global average pooling layer followed by a fully-connected layer with softmax activation. In the models with attention, the last three layers were replaced with a soft attention block implemented according to the specifications of Datta et al. (2021). This block produces a $7 \times 7$ feature map which is $2 \times 2$ max pooled and concatenated with a $2 \times 2$ max pooled version of the input to the attention block. This concatenated output is put through ReLU activation, 50\% dropout, and global average pooling before being handed off to the fully connected prediction head with softmax activation \cite{AttentionSkinCancerClassification}. In each model, the width of the prediction head was equal to the number of classes in the dataset (seven for dermatoscopy and two for fundoscopy and chest x-ray).
+
+      All models used the Adam optimizer with $\eta=0.01$ and $\epsilon=0.1$ and minimized categorical cross-entropy during training. During training classes were weighted based on their inverse frequency relative to the other classes. Each model was trained for a maximum of 300 epochs with early stopping (patience $=$ 40, minimum delta $=$ 0.001) causing most to stop after 60-90 epochs. In the dermatoscopy task, models only saw 10\% of the dataset during each epoch; this was done to increase the odds of reproducing the results of Datta et al. (2021) \cite{AttentionSkinCancerClassification}.
+
+  \subsection{Evaluation of Robustness}
 
 %%%%%%%%% REFERENCES
 {\small

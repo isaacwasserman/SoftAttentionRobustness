@@ -1,5 +1,19 @@
 \begin{thebibliography}{10}\itemsep=-1pt
 
+\bibitem{TensorFlow}
+Mart\'{i}n Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen,
+  Craig Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin,
+  Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard,
+  Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh
+  Levenberg, Dandelion Man\'{e}, Rajat Monga, Sherry Moore, Derek Murray, Chris
+  Olah, Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal
+  Talwar, Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi\'{e}gas,
+  Oriol Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and
+  Xiaoqiang Zheng.
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
+  2015.
+\newblock Software available from tensorflow.org.
+
 \bibitem{AttentiveCNNRobustness}
 Prachi Agrawal, Narinder~Singh Punn, Sanjay~Kumar Sonbhadra, and Sonali
   Agarwal.
@@ -20,11 +34,25 @@ Hannah Bleher and Matthias Braun.
   ai-driven clinical decision support systems.
 \newblock {\em AI and Ethics}, Jan 2022.
 
+\bibitem{ResNetPreprocessingImplementation}
+Fran\c{c}ois Chollet et~al.
+\newblock imagenet\_utils.py, 2016.
+
+\bibitem{ResNetImplementation}
+Fran\c{c}ois Chollet et~al.
+\newblock resnet.py, 2018.
+
 \bibitem{AttentionSkinCancerClassification}
 Soumyya~Kanti Datta, Mohammad~Abuzar Shaikh, Sargur~N Srihari, and Mingchen
   Gao.
 \newblock {Soft-Attention Improves Skin Cancer Classification Performance}.
 \newblock {\em arXiv}, 2021.
+
+\bibitem{ImageNet}
+Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In {\em 2009 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 248--255, 2009.
 
 \bibitem{RACL}
 Minjing Dong, Yanxi Li, Yunhe Wang, and Chang Xu.
@@ -78,6 +106,10 @@ Hanxun Huang, Yisen Wang, Sarah~Monazam Erfani, Quanquan Gu, James Bailey, and
 \newblock In {\em Advances in Neural Information Processing Systems}, volume~34
   of {\em arXiv}, pages 5545--5559. Curran Associates, Inc., 2021.
 
+\bibitem{ISIC}
+ISIC.
+\newblock {The international skin imaging collaboration}.
+
 \bibitem{alphafold}
 John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov,
   Olaf Ronneberger, Kathryn Tunyasuvunakool, Russ Bates, Augustin
@@ -89,6 +121,10 @@ John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov,
   Senior, Koray Kavukcuoglu, Pushmeet Kohli, and Demis Hassabis.
 \newblock Highly accurate protein structure prediction with alphafold.
 \newblock {\em Nature}, 596(7873):583--589, Aug 2021.
+
+\bibitem{KaggleDR}
+Kaggle.
+\newblock {Diabetic Retinopathy Detection}, 02 2015.
 
 \bibitem{MORAS}
 Jia Liu and Yaochu Jin.
@@ -163,6 +199,12 @@ Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre
   attention}.
 \newblock {\em arXiv}, 2020.
 
+\bibitem{HAM10000}
+Philipp Tschandl, Cliff Rosendahl, and Harald Kittler.
+\newblock {The HAM10000 dataset, a large collection of multi-source
+  dermatoscopic images of common pigmented skin lesions}.
+\newblock {\em Scientific Data}, 5(1):180161, 2018.
+
 \bibitem{RobustVsAccuracy}
 Dimitris Tsipras, Shibani Santurkar, Logan Engstrom, Alexander Turner, and
   Aleksander Madry.
@@ -176,6 +218,14 @@ Wenhai Wang, Enze Xie, Xiang Li, Deng-Ping Fan, Kaitao Song, Ding Liang, Tong
   Prediction without Convolutions}.
 \newblock {\em 2021 IEEE/CVF International Conference on Computer Vision
   (ICCV)}, 00:548--558, 2021.
+
+\bibitem{ChestX-Ray14}
+Xiaosong Wang, Yifan Peng, Le Lu, Zhiyong Lu, Mohammadhadi Bagheri, and Ronald
+  Summers.
+\newblock Chestx-ray8: Hospital-scale chest x-ray database and benchmarks on
+  weakly-supervised classification and localization of common thorax diseases.
+\newblock In {\em 2017 IEEE Conference on Computer Vision and Pattern
+  Recognition(CVPR)}, pages 3462--3471, 2017.
 
 \bibitem{AttentionForFineGrainedClassification}
 Tianjun Xiao, Yichong Xu, Kuiyuan Yang, Jiaxing Zhang, Yuxin Peng, and Zheng

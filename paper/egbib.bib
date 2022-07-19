@@ -465,3 +465,116 @@ eprint = {2105.03358},
 abstract = {{In clinical applications, neural networks must focus on and highlight the most important parts of an input image. Soft-Attention mechanism enables a neural network toachieve this goal. This paper investigates the effectiveness of Soft-Attention in deep neural architectures. The central aim of Soft-Attention is to boost the value of important features and suppress the noise-inducing features. We compare the performance of VGG, ResNet, InceptionResNetv2 and DenseNet architectures with and without the Soft-Attention mechanism, while classifying skin lesions. The original network when coupled with Soft-Attention outperforms the baseline[16] by 4.7\% while achieving a precision of 93.7\% on HAM10000 dataset [25]. Additionally, Soft-Attention coupling improves the sensitivity score by 3.8\% compared to baseline[31] and achieves 91.6\% on ISIC-2017 dataset [2]. The code is publicly available at github.}}, 
 keywords = {}
 }
+
+@misc{KaggleDR, 
+year = {2015}, 
+title = {{Diabetic Retinopathy Detection}}, 
+author = {Kaggle}, 
+url = {https://www.kaggle.com/c/diabetic-retinopathy-detection}, 
+urldate = {2022-07-19}, 
+keywords = {}, 
+month = {02}
+}
+
+@InProceedings{ChestX-Ray14,
+author    = {Wang, Xiaosong and Peng, Yifan and Lu, Le and Lu, Zhiyong and Bagheri, Mohammadhadi and Summers, Ronald},
+title     = {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases},
+booktitle = {2017 IEEE Conference on Computer Vision and Pattern Recognition(CVPR)},
+pages     = {3462--3471},
+year      = {2017}}
+
+@article{HAM10000, 
+year = {2018}, 
+title = {{The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions}}, 
+author = {Tschandl, Philipp and Rosendahl, Cliff and Kittler, Harald}, 
+journal = {Scientific Data}, 
+doi = {10.1038/sdata.2018.161}, 
+pmid = {30106392}, 
+pmcid = {PMC6091241}, 
+eprint = {1803.10417}, 
+abstract = {{Training of neural networks for automated diagnosis of pigmented skin lesions is hampered by the small size and lack of diversity of available datasets of dermatoscopic images. We tackle this problem by releasing the HAM10000 (“Human Against Machine with 10000 training images”) dataset. We collected dermatoscopic images from different populations acquired and stored by different modalities. Given this diversity we had to apply different acquisition and cleaning methods and developed semi-automatic workflows utilizing specifically trained neural networks. The final dataset consists of 10015 dermatoscopic images which are released as a training set for academic machine learning purposes and are publicly available through the ISIC archive. This benchmark dataset can be used for machine learning and for comparisons with human experts. Cases include a representative collection of all important diagnostic categories in the realm of pigmented lesions. More than 50\% of lesions have been confirmed by pathology, while the ground truth for the rest of the cases was either follow-up, expert consensus, or confirmation by in-vivo confocal microscopy.}}, 
+pages = {180161}, 
+number = {1}, 
+volume = {5}, 
+keywords = {}
+}
+
+@misc{ISIC, 
+title = {{The international skin imaging collaboration}}, 
+author = {ISIC}, 
+url = {https://www.isic-archive.com/}, 
+urldate = {2022-7-19}, 
+keywords = {}
+}
+
+@INPROCEEDINGS{ImageNet,
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Kai Li and Li Fei-Fei},
+  booktitle={2009 IEEE Conference on Computer Vision and Pattern Recognition}, 
+  title={ImageNet: A large-scale hierarchical image database}, 
+  year={2009},
+  volume={},
+  number={},
+  pages={248-255},
+  doi={10.1109/CVPR.2009.5206848}}
+
+@misc{TensorFlow,
+title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+url={https://www.tensorflow.org/},
+note={Software available from tensorflow.org},
+author={
+    Mart\'{i}n~Abadi and
+    Ashish~Agarwal and
+    Paul~Barham and
+    Eugene~Brevdo and
+    Zhifeng~Chen and
+    Craig~Citro and
+    Greg~S.~Corrado and
+    Andy~Davis and
+    Jeffrey~Dean and
+    Matthieu~Devin and
+    Sanjay~Ghemawat and
+    Ian~Goodfellow and
+    Andrew~Harp and
+    Geoffrey~Irving and
+    Michael~Isard and
+    Yangqing Jia and
+    Rafal~Jozefowicz and
+    Lukasz~Kaiser and
+    Manjunath~Kudlur and
+    Josh~Levenberg and
+    Dandelion~Man\'{e} and
+    Rajat~Monga and
+    Sherry~Moore and
+    Derek~Murray and
+    Chris~Olah and
+    Mike~Schuster and
+    Jonathon~Shlens and
+    Benoit~Steiner and
+    Ilya~Sutskever and
+    Kunal~Talwar and
+    Paul~Tucker and
+    Vincent~Vanhoucke and
+    Vijay~Vasudevan and
+    Fernanda~Vi\'{e}gas and
+    Oriol~Vinyals and
+    Pete~Warden and
+    Martin~Wattenberg and
+    Martin~Wicke and
+    Yuan~Yu and
+    Xiaoqiang~Zheng},
+  year={2015},
+}
+
+@misc{ResNetPreprocessingImplementation,
+  title={imagenet\_utils.py},
+  url={https://github.com/keras-team/keras/blob/07e13740fd181fc3ddec7d9a594d8a08666645f6/keras/applications/imagenet\_utils.py},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2016}
+}
+
+@misc{ResNetImplementation,
+  title={resnet.py},
+  url={https://github.com/keras-team/keras/blob/v2.9.0/keras/applications/resnet.py#L440-L459},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2018}
+}
