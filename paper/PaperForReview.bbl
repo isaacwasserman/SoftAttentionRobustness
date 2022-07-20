@@ -38,6 +38,10 @@ Hannah Bleher and Matthias Braun.
 Fran\c{c}ois Chollet et~al.
 \newblock imagenet\_utils.py, 2016.
 
+\bibitem{InceptionImplementation}
+Fran\c{c}ois Chollet et~al.
+\newblock inception\_resnet\_v2.py, 2017.
+
 \bibitem{ResNetImplementation}
 Fran\c{c}ois Chollet et~al.
 \newblock resnet.py, 2018.
@@ -166,6 +170,19 @@ Magdalini Paschali, Sailesh Conjeti, Fernando Navarro, and Nassir Navab.
   2018, Proceedings, Part I}.
 \newblock {\em Lecture Notes in Computer Science}, pages 493--501, 2018.
 
+\bibitem{FoolBoxLibrary}
+Jonas Rauber, Wieland Brendel, and Matthias Bethge.
+\newblock Foolbox: A python toolbox to benchmark the robustness of machine
+  learning models.
+\newblock In {\em Reliable Machine Learning in the Wild Workshop, 34th
+  International Conference on Machine Learning}, 2017.
+
+\bibitem{FoolBoxPaper}
+Jonas Rauber, Roland Zimmermann, Matthias Bethge, and Wieland Brendel.
+\newblock Foolbox native: Fast adversarial attacks to benchmark the robustness
+  of machine learning models in pytorch, tensorflow, and jax.
+\newblock {\em Journal of Open Source Software}, 5(53):2607, 2020.
+
 \bibitem{muzero}
 Julian Schrittwieser, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan,
   Laurent Sifre, Simon Schmitt, Arthur Guez, Edward Lockhart, Demis Hassabis,
@@ -174,10 +191,23 @@ Julian Schrittwieser, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan,
   model.
 \newblock {\em Nature}, 588(7839):604--609, Dec 2020.
 
+\bibitem{Grad-CAM}
+Ramprasaath~R Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
+  Devi Parikh, and Dhruv Batra.
+\newblock {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based
+  Localization}.
+\newblock {\em arXiv}, 2016.
+
 \bibitem{RobustTransformers}
 Rulin Shao, Zhouxing Shi, Jinfeng Yi, Pin-Yu Chen, and Cho-Jui Hsieh.
 \newblock {On the Adversarial Robustness of Vision Transformers}.
 \newblock {\em arXiv}, 2021.
+
+\bibitem{InceptionResNet}
+Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi.
+\newblock {Inception-v4, Inception-ResNet and the Impact of Residual
+  Connections on Learning}.
+\newblock {\em arXiv}, 2016.
 
 \bibitem{Intro-Adv}
 Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan,

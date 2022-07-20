@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  19 JUL 2022 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  20 JUL 2022 15:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -400,7 +400,58 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/local/texlive/2021/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
+\pgfplots@tmpa=\dimen279
+\c@pgfplots@coordindex=\count320
+\c@pgfplots@scanlineindex=\count321
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count322
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count323
+\t@pgfplotstable@a=\toks45
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count324
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen280
+\pgfdecoratedremainingdistance=\dimen281
+\pgfdecoratedinputsegmentcompleteddistance=\dimen282
+\pgfdecoratedinputsegmentremainingdistance=\dimen283
+\pgf@decorate@distancetomove=\dimen284
+\pgf@decorate@repeatstate=\count325
+\pgfdecorationsegmentamplitude=\dimen285
+\pgfdecorationsegmentlength=\dimen286
+)
+\tikz@lib@dec@box=\box66
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count326
+\pgfplots@xmin@reg=\dimen287
+\pgfplots@xmax@reg=\dimen288
+\pgfplots@ymin@reg=\dimen289
+\pgfplots@ymax@reg=\dimen290
+\pgfplots@zmin@reg=\dimen291
+\pgfplots@zmax@reg=\dimen292
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplotstable 2021/05/15 v1.18.1 Table typesetting and Pretty-printing (1.18.1)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.coltype.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen293
+\ar@mcellbox=\box67
+\extrarowheight=\dimen294
+\NC@list=\toks46
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box68
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
  (/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -429,9 +480,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen279
-\Hy@linkcounter=\count320
-\Hy@pagecounter=\count321
+\@linkdim=\dimen295
+\Hy@linkcounter=\count327
+\Hy@pagecounter=\count328
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -443,7 +494,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count322
+\Hy@SavedSpaceFactor=\count329
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -472,15 +523,15 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 ))
-\c@Hy@tempcnt=\count323
+\c@Hy@tempcnt=\count330
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen280
+\XeTeXLinkMargin=\dimen296
  (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count324
-\Field@Width=\dimen281
-\Fld@charsize=\dimen282
+\Fld@menulength=\count331
+\Field@Width=\dimen297
+\Fld@charsize=\dimen298
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -494,16 +545,16 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count325
-\c@Item=\count326
-\c@Hfootnote=\count327
+\Hy@abspage=\count332
+\c@Item=\count333
+\c@Hfootnote=\count334
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
-\Fld@listcount=\count328
-\c@bookmark@seq@number=\count329
-\Hy@SectionHShift=\skip52
+\Fld@listcount=\count335
+\c@bookmark@seq@number=\count336
+\Hy@SectionHShift=\skip54
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -520,137 +571,212 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: always capitalise cross-reference names on input line 7830.
 Package cleveref Info: always capitalise cross-reference names on input line 7852.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 53.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 56.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (./PaperForReview.aux)
 \openout1 = `PaperForReview.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros (/usr/local/texlive/2021/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count330
-\d@lta=\count331
-\@delta=\dimen283
-\@@delta=\dimen284
-\@gridcnt=\count332
-\@joinkind=\count333
-\@dotgap=\dimen285
-\@ddotgap=\dimen286
-\@x@diff=\count334
-\@y@diff=\count335
-\x@diff=\dimen287
-\y@diff=\dimen288
-\@dotbox=\box66
-\num@segments=\count336
-\num@segmentsi=\count337
+\@@multicnt=\count337
+\d@lta=\count338
+\@delta=\dimen299
+\@@delta=\dimen300
+\@gridcnt=\count339
+\@joinkind=\count340
+\@dotgap=\dimen301
+\@ddotgap=\dimen302
+\@x@diff=\count341
+\@y@diff=\count342
+\x@diff=\dimen303
+\y@diff=\dimen304
+\@dotbox=\box69
+\num@segments=\count343
+\num@segmentsi=\count344
 \@datafile=\read3
 ) (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen289
-\scratchbox=\box67
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen290
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count345
+\scratchdimen=\dimen305
+\scratchbox=\box70
+\nofMPsegments=\count346
+\nofMParguments=\count347
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count348
+\MPscratchDim=\dimen306
+\MPnumerator=\count349
+\makeMPintoPDFobject=\count350
+\everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 53.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.7).
+
+Package hyperref Info: Link coloring ON on input line 56.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count344
+\c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
  (./PaperForReview.out) (./PaperForReview.out)
 \@outlinefile=\write4
 \openout4 = `PaperForReview.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 63.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 66.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] [2] [3]
-<graphics/unprocessedxray.png, id=170, 1027.84pt x 1027.84pt>
+<graphics/unprocessedxray.png, id=182, 1027.84pt x 1027.84pt>
 File: graphics/unprocessedxray.png Graphic file (type png)
 <use graphics/unprocessedxray.png>
-Package pdftex.def Info: graphics/unprocessedxray.png  used on input line 131.
+Package pdftex.def Info: graphics/unprocessedxray.png  used on input line 134.
 (pdftex.def)             Requested size: 94.85292pt x 94.83846pt.
-<graphics/processedxray.jpg, id=171, 1027.84pt x 1027.84pt>
+<graphics/processedxray.jpg, id=183, 1027.84pt x 1027.84pt>
 File: graphics/processedxray.jpg Graphic file (type jpg)
 <use graphics/processedxray.jpg>
-Package pdftex.def Info: graphics/processedxray.jpg  used on input line 135.
+Package pdftex.def Info: graphics/processedxray.jpg  used on input line 138.
 (pdftex.def)             Requested size: 94.85292pt x 94.83846pt.
- (./PaperForReview.bbl (./PaperForReview.brf)
+<graphics/derm_unperturbed.jpg, id=197, 265.99374pt x 265.99374pt>
+File: graphics/derm_unperturbed.jpg Graphic file (type jpg)
+<use graphics/derm_unperturbed.jpg>
+Package pdftex.def Info: graphics/derm_unperturbed.jpg  used on input line 170.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+<graphics/derm_e=0.01_difference.jpg, id=198, 265.99374pt x 265.99374pt>
+File: graphics/derm_e=0.01_difference.jpg Graphic file (type jpg)
+<use graphics/derm_e=0.01_difference.jpg>
+Package pdftex.def Info: graphics/derm_e=0.01_difference.jpg  used on input line 174.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+<graphics/derm_e=0.01.jpg, id=199, 265.99374pt x 265.99374pt>
+File: graphics/derm_e=0.01.jpg Graphic file (type jpg)
+<use graphics/derm_e=0.01.jpg>
+Package pdftex.def Info: graphics/derm_e=0.01.jpg  used on input line 178.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+
+Overfull \hbox (2.70378pt too wide) in paragraph at lines 168--181
+ []$[][][][][]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./graphics/unprocessedxray.png (PNG copy)> <./graphics/processedxray.jpg>]
+<graphics/dr_unperturbed.jpg, id=217, 265.99374pt x 265.99374pt>
+File: graphics/dr_unperturbed.jpg Graphic file (type jpg)
+<use graphics/dr_unperturbed.jpg>
+Package pdftex.def Info: graphics/dr_unperturbed.jpg  used on input line 218.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+<graphics/dr_e=0.32_difference.jpg, id=218, 265.99374pt x 265.99374pt>
+File: graphics/dr_e=0.32_difference.jpg Graphic file (type jpg)
+<use graphics/dr_e=0.32_difference.jpg>
+Package pdftex.def Info: graphics/dr_e=0.32_difference.jpg  used on input line 222.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+<graphics/dr_e=0.32.jpg, id=219, 265.99374pt x 265.99374pt>
+File: graphics/dr_e=0.32.jpg Graphic file (type jpg)
+<use graphics/dr_e=0.32.jpg>
+Package pdftex.def Info: graphics/dr_e=0.32.jpg  used on input line 226.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+
+Overfull \hbox (2.70378pt too wide) in paragraph at lines 216--229
+ []$[][][][][]$ 
+ []
+
+NOTE: coordinate (0Y0.0e0],1Y8.32e-1]) has been dropped because it is unbounded (in x). (see also unbounded coords=jump). 
+NOTE: coordinate (0Y0.0e0],1Y8.18e-1]) has been dropped because it is unbounded (in x). (see also unbounded coords=jump). 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<graphics/pneumo_unperturbed.jpg, id=222, 265.99374pt x 265.99374pt>
+File: graphics/pneumo_unperturbed.jpg Graphic file (type jpg)
+<use graphics/pneumo_unperturbed.jpg>
+Package pdftex.def Info: graphics/pneumo_unperturbed.jpg  used on input line 278.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+<graphics/pneumo_e=0.32_difference.jpg, id=223, 265.99374pt x 265.99374pt>
+File: graphics/pneumo_e=0.32_difference.jpg Graphic file (type jpg)
+<use graphics/pneumo_e=0.32_difference.jpg>
+Package pdftex.def Info: graphics/pneumo_e=0.32_difference.jpg  used on input line 282.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+<graphics/pneumo_e=0.32.jpg, id=224, 265.99374pt x 265.99374pt>
+File: graphics/pneumo_e=0.32.jpg Graphic file (type jpg)
+<use graphics/pneumo_e=0.32.jpg>
+Package pdftex.def Info: graphics/pneumo_e=0.32.jpg  used on input line 286.
+(pdftex.def)             Requested size: 61.65404pt x 61.65215pt.
+
+Overfull \hbox (2.70378pt too wide) in paragraph at lines 276--289
+ []$[][][][][]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./PaperForReview.bbl (./PaperForReview.brf)
 \tf@brf=\write5
 \openout5 = `PaperForReview.brf'.
 
- [4 <./graphics/unprocessedxray.png (PNG copy)> <./graphics/processedxray.jpg>] [5]) [6
-
-] (./PaperForReview.aux)
+ [5 <./graphics/derm_unperturbed.jpg> <./graphics/derm_e=0.01_difference.jpg> <./graphics/derm_e=0.01.jpg> <./graphics/dr_unperturbed.jpg> <./graphics/dr_e=0.32_difference.jpg> <./graphics/dr_e=0.32.jpg> <./graphics/pneumo_unperturbed.jpg> <./graphics/pneumo_e=0.32_difference.jpg> <./graphics/pneumo_e=0.32.jpg>] [6]) [7] (./PaperForReview.aux)
 Package rerunfilecheck Info: File `PaperForReview.out' has not changed.
-(rerunfilecheck)             Checksum: 3058CEDFFE439FA8F3C123F335158302;2154.
+(rerunfilecheck)             Checksum: 589A949B19DD1713ACEA049160B79EC3;2665.
 Package rerunfilecheck Info: File `PaperForReview.brf' has not changed.
-(rerunfilecheck)             Checksum: 5936E7A55AED731482333DA8CCC7F55A;2949.
+(rerunfilecheck)             Checksum: 107BB4136A6D0E582F36115960E71C2E;3288.
  ) 
 Here is how much of TeX's memory you used:
- 24702 strings out of 478286
- 468902 string characters out of 5846727
- 844025 words of memory out of 5000000
- 42425 multiletter control sequences out of 15000+600000
- 498812 words of font info for 99 fonts, out of 8000000 for 9000
+ 35944 strings out of 478286
+ 846289 string characters out of 5846727
+ 1335430 words of memory out of 5000000
+ 53492 multiletter control sequences out of 15000+600000
+ 500357 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,21n,91p,1433b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on PaperForReview.pdf (6 pages, 1681498 bytes).
+ 87i,21n,91p,1433b,2281s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on PaperForReview.pdf (7 pages, 2145910 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

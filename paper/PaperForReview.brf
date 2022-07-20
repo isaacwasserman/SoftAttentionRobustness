@@ -53,6 +53,12 @@
 \backcite {ResNetPreprocessingImplementation}{{3}{3.2}{subsection.3.2}}
 \backcite {TensorFlow}{{4}{3.3}{subsection.3.3}}
 \backcite {ResNetImplementation}{{4}{3.3}{subsection.3.3}}
+\backcite {InceptionImplementation}{{4}{3.3}{subsection.3.3}}
 \backcite {ImageNet}{{4}{3.3}{subsection.3.3}}
 \backcite {AttentionSkinCancerClassification}{{4}{3.3}{subsection.3.3}}
+\backcite {InceptionResNet}{{4}{3.3}{subsection.3.3}}
 \backcite {AttentionSkinCancerClassification}{{4}{3.3}{subsection.3.3}}
+\backcite {FoolBoxPaper}{{4}{3.4}{subsection.3.4}}
+\backcite {FoolBoxLibrary}{{4}{3.4}{subsection.3.4}}
+\backcite {Grad-CAM}{{4}{3.4}{subsection.3.4}}
+\backcite {AttentionSkinCancerClassification}{{4}{3.4}{subsection.3.4}}

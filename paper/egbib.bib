@@ -578,3 +578,62 @@ author={
   author={Chollet, Fran\c{c}ois and others},
   year={2018}
 }
+
+@misc{InceptionImplementation,
+  title={inception\_resnet\_v2.py},
+  url={https://github.com/keras-team/keras/blob/v2.9.0/keras/applications/inception\_resnet\_v2.py},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2017}
+}
+
+@article{InceptionResNet, 
+year = {2016}, 
+title = {{Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning}}, 
+author = {Szegedy, Christian and Ioffe, Sergey and Vanhoucke, Vincent and Alemi, Alex}, 
+journal = {arXiv}, 
+eprint = {1602.07261}, 
+abstract = {{Very deep convolutional networks have been central to the largest advances in image recognition performance in recent years. One example is the Inception architecture that has been shown to achieve very good performance at relatively low computational cost. Recently, the introduction of residual connections in conjunction with a more traditional architecture has yielded state-of-the-art performance in the 2015 ILSVRC challenge; its performance was similar to the latest generation Inception-v3 network. This raises the question of whether there are any benefit in combining the Inception architecture with residual connections. Here we give clear empirical evidence that training with residual connections accelerates the training of Inception networks significantly. There is also some evidence of residual Inception networks outperforming similarly expensive Inception networks without residual connections by a thin margin. We also present several new streamlined architectures for both residual and non-residual Inception networks. These variations improve the single-frame recognition performance on the ILSVRC 2012 classification task significantly. We further demonstrate how proper activation scaling stabilizes the training of very wide residual Inception networks. With an ensemble of three residual and one Inception-v4, we achieve 3.08 percent top-5 error on the test set of the ImageNet classification (CLS) challenge}}, 
+keywords = {}
+}
+
+@article{FoolBoxPaper,
+  doi = {10.21105/joss.02607},
+  url = {https://doi.org/10.21105/joss.02607},
+  year = {2020},
+  publisher = {The Open Journal},
+  volume = {5},
+  number = {53},
+  pages = {2607},
+  author = {Jonas Rauber and Roland Zimmermann and Matthias Bethge and Wieland Brendel},
+  title = {Foolbox Native: Fast adversarial attacks to benchmark the robustness of machine learning models in PyTorch, TensorFlow, and JAX},
+  journal = {Journal of Open Source Software}
+}
+
+@inproceedings{FoolBoxLibrary,
+  title={Foolbox: A Python toolbox to benchmark the robustness of machine learning models},
+  author={Rauber, Jonas and Brendel, Wieland and Bethge, Matthias},
+  booktitle={Reliable Machine Learning in the Wild Workshop, 34th International Conference on Machine Learning},
+  year={2017},
+  url={http://arxiv.org/abs/1707.04131},
+}
+
+@article{FGSM, 
+year = {2014}, 
+title = {{Explaining and Harnessing Adversarial Examples}}, 
+author = {Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian}, 
+journal = {arXiv}, 
+eprint = {1412.6572}, 
+abstract = {{Several machine learning models, including neural networks, consistently misclassify adversarial examples---inputs formed by applying small but intentionally worst-case perturbations to examples from the dataset, such that the perturbed input results in the model outputting an incorrect answer with high confidence. Early attempts at explaining this phenomenon focused on nonlinearity and overfitting. We argue instead that the primary cause of neural networks' vulnerability to adversarial perturbation is their linear nature. This explanation is supported by new quantitative results while giving the first explanation of the most intriguing fact about them: their generalization across architectures and training sets. Moreover, this view yields a simple and fast method of generating adversarial examples. Using this approach to provide examples for adversarial training, we reduce the test set error of a maxout network on the MNIST dataset.}}, 
+keywords = {}
+}
+
+@article{Grad-CAM, 
+year = {2016}, 
+title = {{Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization}}, 
+author = {Selvaraju, Ramprasaath R and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv}, 
+journal = {arXiv}, 
+doi = {10.1007/s11263-019-01228-7}, 
+eprint = {1610.02391}, 
+abstract = {{We propose a technique for producing "visual explanations" for decisions from a large class of CNN-based models, making them more transparent. Our approach - Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting important regions in the image for predicting the concept. Grad-CAM is applicable to a wide variety of CNN model-families: (1) CNNs with fully-connected layers, (2) CNNs used for structured outputs, (3) CNNs used in tasks with multimodal inputs or reinforcement learning, without any architectural changes or re-training. We combine Grad-CAM with fine-grained visualizations to create a high-resolution class-discriminative visualization and apply it to off-the-shelf image classification, captioning, and visual question answering (VQA) models, including ResNet-based architectures. In the context of image classification models, our visualizations (a) lend insights into their failure modes, (b) are robust to adversarial images, (c) outperform previous methods on localization, (d) are more faithful to the underlying model and (e) help achieve generalization by identifying dataset bias. For captioning and VQA, we show that even non-attention based models can localize inputs. We devise a way to identify important neurons through Grad-CAM and combine it with neuron names to provide textual explanations for model decisions. Finally, we design and conduct human studies to measure if Grad-CAM helps users establish appropriate trust in predictions from models and show that Grad-CAM helps untrained users successfully discern a 'stronger' nodel from a 'weaker' one even when both make identical predictions. Our code is available at https://github.com/ramprs/grad-cam/, along with a demo at http://gradcam.cloudcv.org, and a video at youtu.be/COjUB9Izk6E.}}, 
+keywords = {}
+}

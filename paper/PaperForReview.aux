@@ -135,54 +135,93 @@
 \@writefile{brf}{\backcite{ResNetPreprocessingImplementation}{{3}{3.2}{subsection.3.2}}}
 \citation{TensorFlow}
 \citation{ResNetImplementation}
+\citation{InceptionImplementation}
 \citation{ImageNet}
 \citation{AttentionSkinCancerClassification}
+\citation{InceptionResNet}
 \citation{AttentionSkinCancerClassification}
-\bibstyle{ieee_fullname}
-\bibdata{egbib}
-\bibcite{TensorFlow}{1}
-\bibcite{AttentiveCNNRobustness}{2}
-\bibcite{NIH-AI}{3}
-\bibcite{AI-CDSS}{4}
-\bibcite{ResNetPreprocessingImplementation}{5}
-\bibcite{ResNetImplementation}{6}
-\bibcite{AttentionSkinCancerClassification}{7}
-\bibcite{ImageNet}{8}
-\bibcite{RACL}{9}
-\bibcite{ViT}{10}
-\bibcite{Finlayson}{11}
-\bibcite{VisionTransformerSurvey}{12}
-\bibcite{ResNet}{13}
+\citation{FoolBoxPaper}
+\citation{FoolBoxLibrary}
+\citation{Grad-CAM}
+\citation{AttentionSkinCancerClassification}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Visualization of the chest x-ray image preprocessing pipeline\relax }}{4}{figure.caption.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}\hskip -1em.\nobreakspace  {}Network Architecture}{4}{subsection.3.3}\protected@file@percent }
 \@writefile{brf}{\backcite{TensorFlow}{{4}{3.3}{subsection.3.3}}}
 \@writefile{brf}{\backcite{ResNetImplementation}{{4}{3.3}{subsection.3.3}}}
+\@writefile{brf}{\backcite{InceptionImplementation}{{4}{3.3}{subsection.3.3}}}
 \@writefile{brf}{\backcite{ImageNet}{{4}{3.3}{subsection.3.3}}}
 \@writefile{brf}{\backcite{AttentionSkinCancerClassification}{{4}{3.3}{subsection.3.3}}}
+\@writefile{brf}{\backcite{InceptionResNet}{{4}{3.3}{subsection.3.3}}}
 \@writefile{brf}{\backcite{AttentionSkinCancerClassification}{{4}{3.3}{subsection.3.3}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}\hskip -1em.\nobreakspace  {}Evaluation of Robustness}{4}{subsection.3.4}\protected@file@percent }
-\bibcite{Natural-Adv}{14}
-\bibcite{DSRNA}{15}
-\bibcite{Huang}{16}
-\bibcite{ISIC}{17}
-\bibcite{alphafold}{18}
-\bibcite{KaggleDR}{19}
-\bibcite{MORAS}{20}
-\bibcite{Swin}{21}
-\bibcite{MaNiu}{22}
-\bibcite{Madry}{23}
-\bibcite{AdvRush}{24}
-\bibcite{Paschali}{25}
-\bibcite{muzero}{26}
-\bibcite{RobustTransformers}{27}
-\bibcite{Intro-Adv}{28}
-\bibcite{Med-XAI}{29}
-\bibcite{DeiT}{30}
-\bibcite{HAM10000}{31}
-\bibcite{RobustVsAccuracy}{32}
-\bibcite{PVT}{33}
-\bibcite{ChestX-Ray14}{34}
-\bibcite{AttentionForFineGrainedClassification}{35}
-\bibcite{medical-cnn-survey}{36}
-\bibcite{UnderstandingTransformerRobustness}{37}
-\gdef \@abspage@last{6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}\hskip -1em.\nobreakspace  {}Evaluation and Analysis of Robustness}{4}{subsection.3.4}\protected@file@percent }
+\@writefile{brf}{\backcite{FoolBoxPaper}{{4}{3.4}{subsection.3.4}}}
+\@writefile{brf}{\backcite{FoolBoxLibrary}{{4}{3.4}{subsection.3.4}}}
+\@writefile{brf}{\backcite{Grad-CAM}{{4}{3.4}{subsection.3.4}}}
+\@writefile{brf}{\backcite{AttentionSkinCancerClassification}{{4}{3.4}{subsection.3.4}}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Results}{4}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.\nobreakspace  {}ResNet-50 Models}{4}{subsection.4.1}\protected@file@percent }
+\bibstyle{ieee_fullname}
+\bibdata{egbib}
+\bibcite{TensorFlow}{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces An example of $\epsilon =0.01$ perturbation on the dermatoscopy dataset. 0.01 is the maximum perturbation radius used for this dataset.\relax }}{5}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{example_derm_perturbation}{{2}{5}{An example of $\epsilon =0.01$ perturbation on the dermatoscopy dataset. 0.01 is the maximum perturbation radius used for this dataset.\relax }{figure.caption.2}{}}
+\newlabel{example_derm_perturbation@cref}{{[figure][2][]2}{[1][4][]5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Clean- and robust-accuracy of ResNet-50 models for skin lesion classification. Dashed lines represent clean-accuracy.\relax }}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{DermResNet50Robustness}{{3}{5}{Clean- and robust-accuracy of ResNet-50 models for skin lesion classification. Dashed lines represent clean-accuracy.\relax }{figure.caption.3}{}}
+\newlabel{DermResNet50Robustness@cref}{{[figure][3][]3}{[1][4][]5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces An example of $\epsilon =0.32$ perturbation on the fundoscopy dataset. 0.32 is the maximum perturbation radius used for this dataset.\relax }}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{example_dr_perturbation}{{4}{5}{An example of $\epsilon =0.32$ perturbation on the fundoscopy dataset. 0.32 is the maximum perturbation radius used for this dataset.\relax }{figure.caption.4}{}}
+\newlabel{example_dr_perturbation@cref}{{[figure][4][]4}{[1][5][]5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Clean- and robust-accuracy of ResNet-50 models for diabetic retinopathy detection. Dashed lines represent clean-accuracy.\relax }}{5}{figure.caption.5}\protected@file@percent }
+\newlabel{DRResNet50Robustness}{{5}{5}{Clean- and robust-accuracy of ResNet-50 models for diabetic retinopathy detection. Dashed lines represent clean-accuracy.\relax }{figure.caption.5}{}}
+\newlabel{DRResNet50Robustness@cref}{{[figure][5][]5}{[1][5][]5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces An example of $\epsilon =0.32$ perturbation on the chest x-ray dataset. 0.32 is the maximum perturbation radius used for this dataset.\relax }}{5}{figure.caption.6}\protected@file@percent }
+\newlabel{example_pneumo_perturbation}{{6}{5}{An example of $\epsilon =0.32$ perturbation on the chest x-ray dataset. 0.32 is the maximum perturbation radius used for this dataset.\relax }{figure.caption.6}{}}
+\newlabel{example_pneumo_perturbation@cref}{{[figure][6][]6}{[1][5][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.\nobreakspace  {}InceptionResNetV2 Models}{5}{subsection.4.2}\protected@file@percent }
+\bibcite{AttentiveCNNRobustness}{2}
+\bibcite{NIH-AI}{3}
+\bibcite{AI-CDSS}{4}
+\bibcite{ResNetPreprocessingImplementation}{5}
+\bibcite{InceptionImplementation}{6}
+\bibcite{ResNetImplementation}{7}
+\bibcite{AttentionSkinCancerClassification}{8}
+\bibcite{ImageNet}{9}
+\bibcite{RACL}{10}
+\bibcite{ViT}{11}
+\bibcite{Finlayson}{12}
+\bibcite{VisionTransformerSurvey}{13}
+\bibcite{ResNet}{14}
+\bibcite{Natural-Adv}{15}
+\bibcite{DSRNA}{16}
+\bibcite{Huang}{17}
+\bibcite{ISIC}{18}
+\bibcite{alphafold}{19}
+\bibcite{KaggleDR}{20}
+\bibcite{MORAS}{21}
+\bibcite{Swin}{22}
+\bibcite{MaNiu}{23}
+\bibcite{Madry}{24}
+\bibcite{AdvRush}{25}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Clean- and robust-accuracy of ResNet-50 models for pneumothorax detection. Dashed lines represent clean-accuracy.\relax }}{6}{figure.caption.7}\protected@file@percent }
+\newlabel{PneumoResNet50Robustness}{{7}{6}{Clean- and robust-accuracy of ResNet-50 models for pneumothorax detection. Dashed lines represent clean-accuracy.\relax }{figure.caption.7}{}}
+\newlabel{PneumoResNet50Robustness@cref}{{[figure][7][]7}{[1][5][]6}}
+\bibcite{Paschali}{26}
+\bibcite{FoolBoxLibrary}{27}
+\bibcite{FoolBoxPaper}{28}
+\bibcite{muzero}{29}
+\bibcite{Grad-CAM}{30}
+\bibcite{RobustTransformers}{31}
+\bibcite{InceptionResNet}{32}
+\bibcite{Intro-Adv}{33}
+\bibcite{Med-XAI}{34}
+\bibcite{DeiT}{35}
+\bibcite{HAM10000}{36}
+\bibcite{RobustVsAccuracy}{37}
+\bibcite{PVT}{38}
+\bibcite{ChestX-Ray14}{39}
+\bibcite{AttentionForFineGrainedClassification}{40}
+\bibcite{medical-cnn-survey}{41}
+\bibcite{UnderstandingTransformerRobustness}{42}
+\gdef \@abspage@last{7}
