@@ -1,0 +1,7 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRecent research has demonstrated the existence of many naturally occurring instances which reliably behave adversarially when used as input to popular models \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QPrior to this discovery, researchers and engineers building models for environments where security and bad-actors were not a concern could somewhat understandably deprioritize adversarial robustness, but with the combination of increased reliance on AI-driven systems, everything we've learned about natural adversarial examples, and the proliferation of civilian-targeted cyber-warfare, secure and reliable neural networks are more important than ever.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAdversarially Robust Medical Classification via Attentive Convolutional Neural Networks\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q***** CVPR 2022\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFinlayson et al. (2019) was the first paper to look into the susceptibility of medical image models to adversarial image attacks.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFinlayson et al. (2019) was the first paper to look into the susceptibility of medical diagnosis models to adversarial image attacks.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThis correlation between sharp loss landscapes and more vulnerable models is outlined by Madry et al. (2017) which attributes this sharpness to overparametrization.\\E$"}
