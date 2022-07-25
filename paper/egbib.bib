@@ -1,0 +1,639 @@
+@String(PAMI = {IEEE Trans. Pattern Anal. Mach. Intell.})
+@String(IJCV = {Int. J. Comput. Vis.})
+@String(CVPR= {IEEE Conf. Comput. Vis. Pattern Recog.})
+@String(ICCV= {Int. Conf. Comput. Vis.})
+@String(ECCV= {Eur. Conf. Comput. Vis.})
+@String(NIPS= {Adv. Neural Inform. Process. Syst.})
+@String(ICPR = {Int. Conf. Pattern Recog.})
+@String(BMVC= {Brit. Mach. Vis. Conf.})
+@String(TOG= {ACM Trans. Graph.})
+@String(TIP  = {IEEE Trans. Image Process.})
+@String(TVCG  = {IEEE Trans. Vis. Comput. Graph.})
+@String(TMM  = {IEEE Trans. Multimedia})
+@String(ACMMM= {ACM Int. Conf. Multimedia})
+@String(ICME = {Int. Conf. Multimedia and Expo})
+@String(ICASSP=	{ICASSP})
+@String(ICIP = {IEEE Int. Conf. Image Process.})
+@String(ACCV  = {ACCV})
+@String(ICLR = {Int. Conf. Learn. Represent.})
+@String(IJCAI = {IJCAI})
+@String(PR   = {Pattern Recognition})
+@String(AAAI = {AAAI})
+@String(CVPRW= {IEEE Conf. Comput. Vis. Pattern Recog. Worksh.})
+@String(CSVT = {IEEE Trans. Circuit Syst. Video Technol.})
+
+@String(SPL	= {IEEE Sign. Process. Letters})
+@String(VR   = {Vis. Res.})
+@String(JOV	 = {J. Vis.})
+@String(TVC  = {The Vis. Comput.})
+@String(JCST  = {J. Comput. Sci. Tech.})
+@String(CGF  = {Comput. Graph. Forum})
+@String(CVM = {Computational Visual Media})
+
+
+@String(PAMI  = {IEEE TPAMI})
+@String(IJCV  = {IJCV})
+@String(CVPR  = {CVPR})
+@String(ICCV  = {ICCV})
+@String(ECCV  = {ECCV})
+@String(NIPS  = {NeurIPS})
+@String(ICPR  = {ICPR})
+@String(BMVC  =	{BMVC})
+@String(TOG   = {ACM TOG})
+@String(TIP   = {IEEE TIP})
+@String(TVCG  = {IEEE TVCG})
+@String(TCSVT = {IEEE TCSVT})
+@String(TMM   =	{IEEE TMM})
+@String(ACMMM = {ACM MM})
+@String(ICME  =	{ICME})
+@String(ICASSP=	{ICASSP})
+@String(ICIP  = {ICIP})
+@String(ACCV  = {ACCV})
+@String(ICLR  = {ICLR})
+@String(IJCAI = {IJCAI})
+@String(PR = {PR})
+@String(AAAI = {AAAI})
+@String(CVPRW= {CVPRW})
+@String(CSVT = {IEEE TCSVT})
+
+
+@Article{alphafold,
+author={Jumper, John
+and Evans, Richard
+and Pritzel, Alexander
+and Green, Tim
+and Figurnov, Michael
+and Ronneberger, Olaf
+and Tunyasuvunakool, Kathryn
+and Bates, Russ
+and {\v{Z}}{\'i}dek, Augustin
+and Potapenko, Anna
+and Bridgland, Alex
+and Meyer, Clemens
+and Kohl, Simon A. A.
+and Ballard, Andrew J.
+and Cowie, Andrew
+and Romera-Paredes, Bernardino
+and Nikolov, Stanislav
+and Jain, Rishub
+and Adler, Jonas
+and Back, Trevor
+and Petersen, Stig
+and Reiman, David
+and Clancy, Ellen
+and Zielinski, Michal
+and Steinegger, Martin
+and Pacholska, Michalina
+and Berghammer, Tamas
+and Bodenstein, Sebastian
+and Silver, David
+and Vinyals, Oriol
+and Senior, Andrew W.
+and Kavukcuoglu, Koray
+and Kohli, Pushmeet
+and Hassabis, Demis},
+title={Highly accurate protein structure prediction with AlphaFold},
+journal={Nature},
+year={2021},
+month={Aug},
+day={01},
+volume={596},
+number={7873},
+pages={583-589},
+abstract={Proteins are essential to life, and understanding their structure can facilitate a mechanistic understanding of their function. Through an enormous experimental effort1--4, the structures of around 100,000 unique proteins have been determined5, but this represents a small fraction of the billions of known protein sequences6,7. Structural coverage is bottlenecked by the months to years of painstaking effort required to determine a single protein structure. Accurate computational approaches are needed to address this gap and to enable large-scale structural bioinformatics. Predicting the three-dimensional structure that a protein will adopt based solely on its amino acid sequence---the structure prediction component of the `protein folding problem'8---has been an important open research problem for more than 50 years9. Despite recent progress10--14, existing methods fall far short of atomic accuracy, especially when no homologous structure is available. Here we provide the first computational method that can regularly predict protein structures with atomic accuracy even in cases in which no similar structure is known. We validated an entirely redesigned version of our neural network-based model, AlphaFold, in the challenging 14th Critical Assessment of protein Structure Prediction (CASP14)15, demonstrating accuracy competitive with experimental structures in a majority of cases and greatly outperforming other methods. Underpinning the latest version of AlphaFold is a novel machine learning approach that incorporates physical and biological knowledge about protein structure, leveraging multi-sequence alignments, into the design of the deep learning algorithm.},
+issn={1476-4687},
+doi={10.1038/s41586-021-03819-2},
+url={https://doi.org/10.1038/s41586-021-03819-2}
+}
+
+@Article{muzero,
+author={Schrittwieser, Julian
+and Antonoglou, Ioannis
+and Hubert, Thomas
+and Simonyan, Karen
+and Sifre, Laurent
+and Schmitt, Simon
+and Guez, Arthur
+and Lockhart, Edward
+and Hassabis, Demis
+and Graepel, Thore
+and Lillicrap, Timothy
+and Silver, David},
+title={Mastering Atari, Go, chess and shogi by planning with a learned model},
+journal={Nature},
+year={2020},
+month={Dec},
+day={01},
+volume={588},
+number={7839},
+pages={604-609},
+abstract={Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artificial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess1 and Go2, where a perfect simulator is available. However, in real-world problems, the dynamics governing the environment are often complex and unknown. Here we present the MuZero algorithm, which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. The MuZero algorithm learns an iterable model that produces predictions relevant to planning: the action-selection policy, the value function and the reward. When evaluated on 57 different Atari games3---the canonical video game environment for testing artificial intelligence techniques, in which model-based planning approaches have historically struggled4---the MuZero algorithm achieved state-of-the-art performance. When evaluated on Go, chess and shogi---canonical environments for high-performance planning---the MuZero algorithm matched, without any knowledge of the game dynamics, the superhuman performance of the AlphaZero algorithm5 that was supplied with the rules of the game.},
+issn={1476-4687},
+doi={10.1038/s41586-020-03051-4},
+url={https://doi.org/10.1038/s41586-020-03051-4}
+}
+
+@article{medical-cnn-survey, 
+year = {2021}, 
+title = {{Convolutional neural networks for medical image analysis: State-of-the-art, comparisons, improvement and perspectives}}, 
+author = {Yu, Hang and Yang, Laurence T. and Zhang, Qingchen and Armstrong, David and Deen, M. Jamal}, 
+journal = {Neurocomputing}, 
+issn = {0925-2312}, 
+doi = {10.1016/j.neucom.2020.04.157}, 
+abstract = {{Convolutional neural networks, are one of the most representative deep learning models. CNNs were extensively used in many aspects of medical image analysis, allowing for great progress in computer-aided diagnosis in recent years. In this paper, we provide a survey on convolutional neural networks in medical image analysis. First, we review the commonly used CNNs in medical image processing, including AlexNet, GoogleNet, ResNet, R-CNN, and FCNN. Then, we present an overview of the use of CNNs, for image classification, segmentation, detection, and other tasks such as registration, content-based image retrieval, image generation and enhancement, in some typical medical diagnosis areas such as brain, breast, and abdominal. Finally, we discuss the remaining challenges of CNNs in medical image analysis, and accordingly we present some ideas for future research directions.}}, 
+pages = {92--110}, 
+volume = {444}, 
+keywords = {}
+}
+
+@Article{AI-CDSS,
+author={Bleher, Hannah
+and Braun, Matthias},
+title={Diffused responsibility: attributions of responsibility in the use of AI-driven clinical decision support systems},
+journal={AI and Ethics},
+year={2022},
+month={Jan},
+day={24},
+abstract={Good decision-making is a complex endeavor, and particularly so in a health context. The possibilities for day-to-day clinical practice opened up by AI-driven clinical decision support systems (AI-CDSS) give rise to fundamental questions around responsibility. In causal, moral and legal terms the application of AI-CDSS is challenging existing attributions of responsibility. In this context, responsibility gaps are often identified as main problem. Mapping out the changing dynamics and levels of attributing responsibility, we argue in this article that the application of AI-CDSS causes diffusions of responsibility with respect to a causal, moral, and legal dimension. Responsibility diffusion describes the situation where multiple options and several agents can be considered for attributing responsibility. Using the example of an AI-driven `digital tumor board', we illustrate how clinical decision-making is changed and diffusions of responsibility take place. Not denying or attempting to bridge responsibility gaps, we argue that dynamics and ambivalences are inherent in responsibility, which is based on normative considerations such as avoiding experiences of disregard and vulnerability of human life, which are inherently accompanied by a moment of uncertainty, and is characterized by revision openness. Against this background and to avoid responsibility gaps, the article concludes with suggestions for managing responsibility diffusions in clinical decision-making with AI-CDSS.},
+issn={2730-5961},
+doi={10.1007/s43681-022-00135-x},
+url={https://doi.org/10.1007/s43681-022-00135-x}
+}
+
+@ARTICLE{NIH-AI,
+  title     = "Artificial intelligence: How is it changing medical sciences and
+               its future?",
+  author    = "Basu, Kanadpriya and Sinha, Ritwik and Ong, Aihui and Basu,
+               Treena",
+  abstract  = "Artificially intelligent computer systems are used extensively
+               in medical sciences. Common applications include diagnosing
+               patients, end-to-end drug discovery and development, improving
+               communication between physician and patient, transcribing
+               medical documents, such as prescriptions, and remotely treating
+               patients. While computer systems often execute tasks more
+               efficiently than humans, more recently, state-of-the-art
+               computer algorithms have achieved accuracies which are at par
+               with human experts in the field of medical sciences. Some
+               speculate that it is only a matter of time before humans are
+               completely replaced in certain roles within the medical
+               sciences. The motivation of this article is to discuss the ways
+               in which artificial intelligence is changing the landscape of
+               medical science and to separate hype from reality.",
+  journal   = "Indian J. Dermatol.",
+  publisher = "Medknow",
+  volume    =  65,
+  number    =  5,
+  pages     = "365--370",
+  month     =  sep,
+  year      =  2020,
+  keywords  = "Artificial intelligence; deep convolutional neural network;
+               medical use",
+  language  = "en"
+}
+
+@ARTICLE{Med-XAI,
+  author={Tjoa, Erico and Guan, Cuntai},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={A Survey on Explainable Artificial Intelligence (XAI): Toward Medical XAI}, 
+  year={2021},
+  volume={32},
+  number={11},
+  pages={4793-4813},
+  doi={10.1109/TNNLS.2020.3027314}}
+
+@inproceedings{Intro-Adv,
+  title	= {Intriguing properties of neural networks},
+  author	= {Christian Szegedy and Wojciech Zaremba and Ilya Sutskever and Joan Bruna and Dumitru Erhan and Ian Goodfellow and Rob Fergus},
+  year	= {2014},
+  URL	= {http://arxiv.org/abs/1312.6199},
+  booktitle	= {International Conference on Learning Representations}
+}
+
+@InProceedings{Natural-Adv,
+    author    = {Hendrycks, Dan and Zhao, Kevin and Basart, Steven and Steinhardt, Jacob and Song, Dawn},
+    title     = {Natural Adversarial Examples},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {15262-15271}
+}
+
+@InProceedings{ResNet,
+  author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  title = {Deep Residual Learning for Image Recognition},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
+  year = {2016}
+}
+
+@article{RobustVsAccuracy, 
+year = {2018}, 
+title = {{Robustness May Be at Odds with Accuracy}}, 
+author = {Tsipras, Dimitris and Santurkar, Shibani and Engstrom, Logan and Turner, Alexander and Madry, Aleksander}, 
+journal = {arXiv}, 
+eprint = {1805.12152}, 
+abstract = {{We show that there may exist an inherent tension between the goal of adversarial robustness and that of standard generalization. Specifically, training robust models may not only be more resource-consuming, but also lead to a reduction of standard accuracy. We demonstrate that this trade-off between the standard accuracy of a model and its robustness to adversarial perturbations provably exists in a fairly simple and natural setting. These findings also corroborate a similar phenomenon observed empirically in more complex settings. Further, we argue that this phenomenon is a consequence of robust classifiers learning fundamentally different feature representations than standard classifiers. These differences, in particular, seem to result in unexpected benefits: the representations learned by robust models tend to align better with salient data characteristics and human perception.}}, 
+keywords = {}
+}
+
+@article{Finlayson, 
+year = {2019}, 
+title = {{Adversarial attacks on medical machine learning}}, 
+author = {Finlayson, Samuel G. and Bowers, John D. and Ito, Joichi and Zittrain, Jonathan L. and Beam, Andrew L. and Kohane, Isaac S.}, 
+journal = {Science}, 
+issn = {0036-8075}, 
+doi = {10.1126/science.aaw4399}, 
+pmid = {30898923}, 
+abstract = {{Emerging vulnerabilities demand new conversations}}, 
+pages = {1287--1289}, 
+number = {6433}, 
+volume = {363}, 
+keywords = {}
+}
+
+@article{Paschali, 
+year = {2018}, 
+title = {{Medical Image Computing and Computer Assisted Intervention – MICCAI 2018, 21st International Conference, Granada, Spain, September 16-20, 2018, Proceedings, Part I}}, 
+author = {Paschali, Magdalini and Conjeti, Sailesh and Navarro, Fernando and Navab, Nassir}, 
+journal = {Lecture Notes in Computer Science}, 
+issn = {0302-9743}, 
+doi = {10.1007/978-3-030-00928-1\_56}, 
+abstract = {{In this paper, for the first time, we propose an evaluation method for deep learning models that assesses the performance of a model not only in an unseen test scenario, but also in extreme cases of noise, outliers and ambiguous input data. To this end, we utilize adversarial examples, images that fool machine learning models, while looking imperceptibly different from original data, as a measure to evaluate the robustness of a variety of medical imaging models. Through extensive experiments on skin lesion classification and whole brain segmentation with state-of-the-art networks such as Inception and UNet, we show that models that achieve comparable performance regarding generalizability may have significant variations in their perception of the underlying data manifold, leading to an extensive performance gap in their robustness.}}, 
+pages = {493--501}, 
+keywords = {}
+}
+
+@article{MaNiu, 
+year = {2021}, 
+title = {{Understanding adversarial attacks on deep learning based medical image analysis systems}}, 
+author = {Ma, Xingjun and Niu, Yuhao and Gu, Lin and Wang, Yisen and Zhao, Yitian and Bailey, James and Lu, Feng}, 
+journal = {Pattern Recognition}, 
+issn = {0031-3203}, 
+doi = {10.1016/j.patcog.2020.107332}, 
+eprint = {1907.10456}, 
+abstract = {{Deep neural networks (DNNs) have become popular for medical image analysis tasks like cancer diagnosis and lesion detection. However, a recent study demonstrates that medical deep learning systems can be compromised by carefully-engineered adversarial examples/attacks with small imperceptible perturbations. This raises safety concerns about the deployment of these systems in clinical settings. In this paper, we provide a deeper understanding of adversarial examples in the context of medical images. We find that medical DNN models can be more vulnerable to adversarial attacks compared to models for natural images, according to two different viewpoints. Surprisingly, we also find that medical adversarial attacks can be easily detected, i.e., simple detectors can achieve over 98\% detection AUC against state-of-the-art attacks, due to fundamental feature differences compared to normal examples. We believe these findings may be a useful basis to approach the design of more explainable and secure medical deep learning systems.}}, 
+pages = {107332}, 
+volume = {110}, 
+keywords = {}
+}
+
+@article{Madry, 
+year = {2017}, 
+title = {{Towards Deep Learning Models Resistant to Adversarial Attacks}}, 
+author = {Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian}, 
+journal = {arXiv}, 
+eprint = {1706.06083}, 
+abstract = {{Recent work has demonstrated that deep neural networks are vulnerable to adversarial examples---inputs that are almost indistinguishable from natural data and yet classified incorrectly by the network. In fact, some of the latest findings suggest that the existence of adversarial attacks may be an inherent weakness of deep learning models. To address this problem, we study the adversarial robustness of neural networks through the lens of robust optimization. This approach provides us with a broad and unifying view on much of the prior work on this topic. Its principled nature also enables us to identify methods for both training and attacking neural networks that are reliable and, in a certain sense, universal. In particular, they specify a concrete security guarantee that would protect against any adversary. These methods let us train networks with significantly improved resistance to a wide range of adversarial attacks. They also suggest the notion of security against a first-order adversary as a natural and broad security guarantee. We believe that robustness against such well-defined classes of adversaries is an important stepping stone towards fully resistant deep learning models. Code and pre-trained models are available at https://github.com/MadryLab/mnist\_challenge and https://github.com/MadryLab/cifar10\_challenge.}}, 
+keywords = {}
+}
+
+@inproceedings{Huang, 
+year = {2021}, 
+author = {Huang, Hanxun and Wang, Yisen and Erfani, Sarah Monazam and Gu, Quanquan and Bailey, James and Ma, Xingjun}, 
+title = {{Exploring Architectural Ingredients of Adversarially Robust Deep Neural Networks}}, 
+booktitle = {Advances in Neural Information Processing Systems}, 
+url = {https://proceedings.neurips.cc/paper/2021/file/2bd7f907b7f5b6bbd91822c0c7b835f6-Paper.pdf}, 
+abstract = {{Deep neural networks (DNNs) are known to be vulnerable to adversarial attacks. A range of defense methods have been proposed to train adversarially robust DNNs, among which adversarial training has demonstrated promising results. However, despite preliminary understandings developed for adversarial training, it is still not clear, from the architectural perspective, what configurations can lead to more robust DNNs. In this paper, we address this gap via a comprehensive investigation on the impact of network width and depth on the robustness of adversarially trained DNNs. Specifically, we make the following key observations: 1) more parameters (higher model capacity) does not necessarily help adversarial robustness; 2) reducing capacity at the last stage (the last group of blocks) of the network can actually improve adversarial robustness; and 3) under the same parameter budget, there exists an optimal architectural configuration for adversarial robustness. We also provide a theoretical analysis explaning why such network configuration can help robustness. These architectural insights can help design adversarially robust DNNs. Code is available at \textbackslashurl\{https://github.com/HanxunH/RobustWRN\}.}}, 
+pages = {5545--5559}, 
+volume = {34}, 
+series = {arXiv}, 
+publisher = {Curran Associates, Inc.}, 
+keywords = {}
+}
+
+@article{RACL, 
+year = {2020}, 
+title = {{Adversarially Robust Neural Architectures}}, 
+author = {Dong, Minjing and Li, Yanxi and Wang, Yunhe and Xu, Chang}, 
+journal = {arXiv}, 
+eprint = {2009.00902}, 
+abstract = {{Deep Neural Network (DNN) are vulnerable to adversarial attack. Existing methods are devoted to developing various robust training strategies or regularizations to update the weights of the neural network. But beyond the weights, the overall structure and information flow in the network are explicitly determined by the neural architecture, which remains unexplored. This paper thus aims to improve the adversarial robustness of the network from the architecture perspective with NAS framework. We explore the relationship among adversarial robustness, Lipschitz constant, and architecture parameters and show that an appropriate constraint on architecture parameters could reduce the Lipschitz constant to further improve the robustness. For NAS framework, all the architecture parameters are equally treated when the discrete architecture is sampled from supernet. However, the importance of architecture parameters could vary from operation to operation or connection to connection, which is not explored and might reduce the confidence of robust architecture sampling. Thus, we propose to sample architecture parameters from trainable multivariate log-normal distributions, with which the Lipschitz constant of entire network can be approximated using a univariate log-normal distribution with mean and variance related to architecture parameters. Compared with adversarially trained neural architectures searched by various NAS algorithms as well as efficient human-designed models, our algorithm empirically achieves the best performance among all the models under various attacks on different datasets.}}, 
+keywords = {}
+}
+
+@article{AdvRush, 
+year = {2021}, 
+title = {{AdvRush: Searching for Adversarially Robust Neural Architectures}}, 
+author = {Mok, Jisoo and Na, Byunggook and Choe, Hyeokjun and Yoon, Sungroh}, 
+journal = {2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+doi = {10.1109/iccv48922.2021.01210}, 
+abstract = {{Deep neural networks continue to awe the world with their remarkable performance. Their predictions, however, are prone to be corrupted by adversarial examples that are imperceptible to humans. Current efforts to improve the robustness of neural networks against adversarial examples are focused on developing robust training methods, which update the weights of a neural network in a more robust direction. In this work, we take a step beyond training of the weight parameters and consider the problem of designing an adversarially robust neural architecture with high intrinsic robustness. We propose AdvRush, a novel adversarial robustness-aware neural architecture search algorithm, based upon a finding that independent of the training method, the intrinsic robustness of a neural network can be represented with the smoothness of its input loss landscape. Through a regularizer that favors a candidate architecture with a smoother input loss landscape, AdvRush successfully discovers an adversarially robust neural architecture. Along with a comprehensive theoretical motivation for AdvRush, we conduct an extensive amount of experiments to demonstrate the efficacy of AdvRush on various benchmark datasets. Notably, on CIFAR-10, AdvRush achieves 55.91\% robust accuracy under FGSM attack after standard training and 50.04\% robust accuracy under AutoAttack after 7-step PGD adversarial training.}}, 
+pages = {12302--12312}, 
+volume = {00}, 
+keywords = {}
+}
+
+@article{MORAS, 
+year = {2021}, 
+title = {{Multi-objective search of robust neural architectures against multiple types of adversarial attacks}}, 
+author = {Liu, Jia and Jin, Yaochu}, 
+journal = {Neurocomputing}, 
+issn = {0925-2312}, 
+doi = {10.1016/j.neucom.2021.04.111}, 
+abstract = {{Many existing deep learning models are vulnerable to adversarial examples that are imperceptible to humans. To address this issue, various methods have been proposed to design network architectures that are robust to one particular type of adversarial attacks. It is practically impossible, however, to predict beforehand which type of attacks a machine learn model may suffer from. To address this challenge, we propose to search for deep neural architectures that are robust to five types of well-known adversarial attacks using a multi-objective evolutionary algorithm. To reduce the computational cost, a normalized error rate of a randomly chosen attack is calculated as the robustness for each newly generated neural architecture at each generation. All non-dominated network architectures obtained by the proposed method are then fully trained against randomly chosen adversarial attacks and tested on two widely used datasets. Our experimental results demonstrate the superiority of optimized neural architectures found by the proposed approach over state-of-the-art networks that are widely used in the literature in terms of the classification accuracy under different adversarial attacks.}}, 
+pages = {73--84}, 
+volume = {453}, 
+keywords = {}
+}
+
+@article{DSRNA, 
+year = {2020}, 
+title = {{DSRNA: Differentiable Search of Robust Neural Architectures}}, 
+author = {Hosseini, Ramtin and Yang, Xingyi and Xie, Pengtao}, 
+journal = {arXiv}, 
+eprint = {2012.06122}, 
+abstract = {{In deep learning applications, the architectures of deep neural networks are crucial in achieving high accuracy. Many methods have been proposed to search for high-performance neural architectures automatically. However, these searched architectures are prone to adversarial attacks. A small perturbation of the input data can render the architecture to change prediction outcomes significantly. To address this problem, we propose methods to perform differentiable search of robust neural architectures. In our methods, two differentiable metrics are defined to measure architectures' robustness, based on certified lower bound and Jacobian norm bound. Then we search for robust architectures by maximizing the robustness metrics. Different from previous approaches which aim to improve architectures' robustness in an implicit way: performing adversarial training and injecting random noise, our methods explicitly and directly maximize robustness metrics to harvest robust architectures. On CIFAR-10, ImageNet, and MNIST, we perform game-based evaluation and verification-based evaluation on the robustness of our methods. The experimental results show that our methods 1) are more robust to various norm-bound attacks than several robust NAS baselines; 2) are more accurate than baselines when there are no attacks; 3) have significantly higher certified lower bounds than baselines.}}, 
+keywords = {}
+}
+
+@article{VisionTransformerSurvey, 
+year = {2022}, 
+title = {{A Survey on Vision Transformer}}, 
+author = {Han, Kai and Wang, Yunhe and Chen, Hanting and Chen, Xinghao and Guo, Jianyuan and Liu, Zhenhua and Tang, Yehui and Xiao, An and Xu, Chunjing and Xu, Yixing and Yang, Zhaohui and Zhang, Yiman and Tao, Dacheng}, 
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+issn = {0162-8828}, 
+doi = {10.1109/tpami.2022.3152247}, 
+pmid = {35180075}, 
+eprint = {2012.12556}, 
+abstract = {{Transformer, first applied to the field of natural language processing, is a type of deep neural network mainly based on the self-attention mechanism. Thanks to its strong representation capabilities, researchers are looking at ways to apply transformer to computer vision tasks. In a variety of visual benchmarks, transformer-based models perform similar to or better than other types of networks such as convolutional and recurrent neural networks. Given its high performance and less need for vision-specific inductive bias, transformer is receiving more and more attention from the computer vision community. In this paper, we review these vision transformer models by categorizing them in different tasks and analyzing their advantages and disadvantages. The main categories we explore include the backbone network, high/mid-level vision, low-level vision, and video processing. We also include efficient transformer methods for pushing transformer into real device-based applications. Furthermore, we also take a brief look at the self-attention mechanism in computer vision, as it is the base component in transformer. Toward the end of this paper, we discuss the challenges and provide several further research directions for vision transformers.}}, 
+pages = {1--1}, 
+number = {99}, 
+volume = {PP}, 
+keywords = {}
+}
+
+@article{ViT, 
+year = {2020}, 
+title = {{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}}, 
+author = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil}, 
+journal = {arXiv}, 
+eprint = {2010.11929}, 
+abstract = {{While the Transformer architecture has become the de-facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.}}, 
+keywords = {}
+}
+
+@article{DeiT, 
+year = {2020}, 
+title = {{Training data-efficient image transformers \& distillation through attention}}, 
+author = {Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and Jégou, Hervé}, 
+journal = {arXiv}, 
+eprint = {2012.12877}, 
+abstract = {{Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We train them on a single computer in less than 3 days. Our reference vision transformer (86M parameters) achieves top-1 accuracy of 83.1\% (single-crop evaluation) on ImageNet with no external data. More importantly, we introduce a teacher-student strategy specific to transformers. It relies on a distillation token ensuring that the student learns from the teacher through attention. We show the interest of this token-based distillation, especially when using a convnet as a teacher. This leads us to report results competitive with convnets for both Imagenet (where we obtain up to 85.2\% accuracy) and when transferring to other tasks. We share our code and models.}}, 
+keywords = {}
+}
+
+@article{PVT, 
+year = {2021}, 
+title = {{Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions}}, 
+author = {Wang, Wenhai and Xie, Enze and Li, Xiang and Fan, Deng-Ping and Song, Kaitao and Liang, Ding and Lu, Tong and Luo, Ping and Shao, Ling}, 
+journal = {2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+doi = {10.1109/iccv48922.2021.00061}, 
+abstract = {{Although convolutional neural networks (CNNs) have achieved great success in computer vision, this work investigates a simpler, convolution-free backbone network use-fid for many dense prediction tasks. Unlike the recently-proposed Vision Transformer (ViT) that was designed for image classification specifically, we introduce the Pyramid Vision Transformer (PVT), which overcomes the difficulties of porting Transformer to various dense prediction tasks. PVT has several merits compared to current state of the arts. (1) Different from ViT that typically yields low-resolution outputs and incurs high computational and memory costs, PVT not only can be trained on dense partitions of an image to achieve high output resolution, which is important for dense prediction, but also uses a progressive shrinking pyramid to reduce the computations of large feature maps. (2) PVT inherits the advantages of both CNN and Transformer, making it a unified backbone for various vision tasks without convolutions, where it can be used as a direct replacement for CNN backbones. (3) We validate PVT through extensive experiments, showing that it boosts the performance of many downstream tasks, including object detection, instance and semantic segmentation. For example, with a comparable number of parameters, PVT+RetinaNet achieves 40.4 AP on the COCO dataset, surpassing ResNet50+RetinNet (36.3 AP) by 4.1 absolute AP (see Figure 2). We hope that PVT could, serre as an alternative and useful backbone for pixel-level predictions and facilitate future research.}}, 
+pages = {548--558}, 
+volume = {00}, 
+keywords = {}
+}
+
+@article{Swin, 
+year = {2021}, 
+title = {{Swin Transformer: Hierarchical Vision Transformer using Shifted Windows}}, 
+author = {Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining}, 
+journal = {2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+doi = {10.1109/iccv48922.2021.00986}, 
+abstract = {{This paper presents a new vision Transformer, called Swin Transformer, that capably serves as a general-purpose backbone for computer vision. Challenges in adapting Transformer from language to vision arise from differences between the two domains, such as large variations in the scale of visual entities and the high resolution of pixels in images compared to words in text. To address these differences, we propose a hierarchical Transformer whose representation is computed with Shifted windows. The shifted windowing scheme brings greater efficiency by limiting self-attention computation to non-overlapping local windows while also allowing for cross-window connection. This hierarchical architecture has the flexibility to model at various scales and has linear computational complexity with respect to image size. These qualities of Swin Transformer make it compatible with a broad range of vision tasks, including image classification (87.3 top-1 accuracy on ImageNet-1K) and dense prediction tasks such as object detection (58.7 box AP and 51.1 mask AP on COCO test-dev) and semantic segmentation (53.5 mIoU on ADE20K val). Its performance surpasses the previous state-of-the-art by a large margin of +2.7 box AP and +2.6 mask AP on COCO, and +3.2 mIoU on ADE20K, demonstrating the potential of Transformer-based models as vision backbones. The hierarchical design and the shifted window approach also prove beneficial for all-MLP architectures. The code and models are publicly available at https://github.com/microsoft/Swin-Transformer.}}, 
+pages = {9992--10002}, 
+volume = {00}, 
+keywords = {}
+}
+
+@article{RobustTransformers, 
+year = {2021}, 
+title = {{On the Adversarial Robustness of Vision Transformers}}, 
+author = {Shao, Rulin and Shi, Zhouxing and Yi, Jinfeng and Chen, Pin-Yu and Hsieh, Cho-Jui}, 
+journal = {arXiv}, 
+eprint = {2103.15670}, 
+abstract = {{Following the success in advancing natural language processing and understanding, transformers are expected to bring revolutionary changes to computer vision. This work provides the first and comprehensive study on the robustness of vision transformers (ViTs) against adversarial perturbations. Tested on various white-box and transfer attack settings, we find that ViTs possess better adversarial robustness when compared with convolutional neural networks (CNNs). This observation also holds for certified robustness. We summarize the following main observations contributing to the improved robustness of ViTs: 1) Features learned by ViTs contain less low-level information and are more generalizable, which contributes to superior robustness against adversarial perturbations. 2) Introducing convolutional or tokens-to-token blocks for learning low-level features in ViTs can improve classification accuracy but at the cost of adversarial robustness. 3) Increasing the proportion of transformers in the model structure (when the model consists of both transformer and CNN blocks) leads to better robustness. But for a pure transformer model, simply increasing the size or adding layers cannot guarantee a similar effect. 4) Pre-training on larger datasets does not significantly improve adversarial robustness though it is critical for training ViTs. 5) Adversarial training is also applicable to ViT for training robust models. Furthermore, feature visualization and frequency analysis are conducted for explanation. The results show that ViTs are less sensitive to high-frequency perturbations than CNNs and there is a high correlation between how well the model learns low-level features and its robustness against different frequency-based perturbations.}}, 
+keywords = {}
+}
+
+
+@InProceedings{UnderstandingTransformerRobustness,
+  title = 	 {Understanding The Robustness in Vision Transformers},
+  author =       {Zhou, Daquan and Yu, Zhiding and Xie, Enze and Xiao, Chaowei and Anandkumar, Animashree and Feng, Jiashi and Alvarez, Jose M.},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {27378--27394},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/zhou22m/zhou22m.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/zhou22m.html},
+  abstract = 	 {Recent studies show that Vision Transformers (ViTs) exhibit strong robustness against various corruptions. Although this property is partly attributed to the self-attention mechanism, there is still a lack of an explanatory framework towards a more systematic understanding. In this paper, we examine the role of self-attention in learning robust representations. Our study is motivated by the intriguing properties of self-attention in visual grouping which indicate that self-attention could promote improved mid-level representation and robustness. We thus propose a family of fully attentional networks (FANs) that incorporate self-attention in both token mixing and channel processing. We validate the design comprehensively on various hierarchical backbones. Our model with a DeiT architecture achieves a state-of-the-art 47.6% mCE on ImageNet-C with 29M parameters. We also demonstrate significantly improved robustness in two downstream tasks: semantic segmentation and object detection}
+}
+
+@article{AttentiveCNNRobustness, 
+year = {2021}, 
+title = {{Impact of Attention on Adversarial Robustness of Image Classification Models}}, 
+author = {Agrawal, Prachi and Punn, Narinder Singh and Sonbhadra, Sanjay Kumar and Agarwal, Sonali}, 
+journal = {2021 IEEE International Conference on Big Data (Big Data)}, 
+doi = {10.1109/bigdata52589.2021.9671889}, 
+abstract = {{Adversarial attacks against deep learning models have gained significant attention and recent works have pro-posed explanations for the existence of adversarial examples and techniques to defend the models against these attacks. Attention in computer vision has been used to incorporate focused learning of important features and has led to improved accuracy. Recently, models with attention mechanisms have been proposed to enhance adversarial robustness. Following this context, this work aims at a general understanding of the impact of attention on adversarial robustness. This work presents a comparative study of adversarial robustness of non-attention and attention based image classification models trained on CIFAR-10, CIFAR-100 and Fashion MNIST datasets under the popular white box and black box attacks. The experimental results show that the robustness of attention based models may be dependent on the datasets used i.e. the number of classes involved in the classification. In contrast to the datasets with less number of classes, attention based models are observed to show better robustness towards classification.}}, 
+pages = {3013--3019}, 
+volume = {00}, 
+keywords = {}
+}
+
+@article{AttentionForFineGrainedClassification, 
+year = {2015}, 
+title = {{The Application of Two-level Attention Models in Deep Convolutional Neural Network for Fine-grained Image Classification}}, 
+author = {Xiao, Tianjun and Xu, Yichong and Yang, Kuiyuan and Zhang, Jiaxing and Peng, Yuxin and Zhang, Zheng}, 
+journal = {2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+doi = {10.1109/cvpr.2015.7298685}, 
+abstract = {{Fine-grained classification is challenging because categories can only be discriminated by subtle and local differences. Variances in the pose, scale or rotation usually make the problem more difficult. Most fine-grained classification systems follow the pipeline of finding foreground object or object parts (where) to extract discriminative features (what). In this paper, we propose to apply visual attention to fine-grained classification task using deep neural network. Our pipeline integrates three types of attention: the bottom-up attention that propose candidate patches, the object-level top-down attention that selects relevant patches to a certain object, and the part-level top-down attention that localizes discriminative parts. We combine these attentions to train domain-specific deep nets, then use it to improve both the what and where aspects. Importantly, we avoid using expensive annotations like bounding box or part information from end-to-end. The weak supervision constraint makes our work easier to generalize. We have verified the effectiveness of the method on the subsets of ILSVRC2012 dataset and CUB200\_2011 dataset. Our pipeline delivered significant improvements and achieved the best accuracy under the weakest supervision condition. The performance is competitive against other methods that rely on additional annotations.}}, 
+pages = {842--850}, 
+keywords = {}
+}
+
+@article{AttentionSkinCancerClassification, 
+year = {2021}, 
+title = {{Soft-Attention Improves Skin Cancer Classification Performance}}, 
+author = {Datta, Soumyya Kanti and Shaikh, Mohammad Abuzar and Srihari, Sargur N and Gao, Mingchen}, 
+journal = {arXiv}, 
+eprint = {2105.03358}, 
+abstract = {{In clinical applications, neural networks must focus on and highlight the most important parts of an input image. Soft-Attention mechanism enables a neural network toachieve this goal. This paper investigates the effectiveness of Soft-Attention in deep neural architectures. The central aim of Soft-Attention is to boost the value of important features and suppress the noise-inducing features. We compare the performance of VGG, ResNet, InceptionResNetv2 and DenseNet architectures with and without the Soft-Attention mechanism, while classifying skin lesions. The original network when coupled with Soft-Attention outperforms the baseline[16] by 4.7\% while achieving a precision of 93.7\% on HAM10000 dataset [25]. Additionally, Soft-Attention coupling improves the sensitivity score by 3.8\% compared to baseline[31] and achieves 91.6\% on ISIC-2017 dataset [2]. The code is publicly available at github.}}, 
+keywords = {}
+}
+
+@misc{KaggleDR, 
+year = {2015}, 
+title = {{Diabetic Retinopathy Detection}}, 
+author = {Kaggle}, 
+url = {https://www.kaggle.com/c/diabetic-retinopathy-detection}, 
+urldate = {2022-07-19}, 
+keywords = {}, 
+month = {02}
+}
+
+@InProceedings{ChestX-Ray14,
+author    = {Wang, Xiaosong and Peng, Yifan and Lu, Le and Lu, Zhiyong and Bagheri, Mohammadhadi and Summers, Ronald},
+title     = {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases},
+booktitle = {2017 IEEE Conference on Computer Vision and Pattern Recognition(CVPR)},
+pages     = {3462--3471},
+year      = {2017}}
+
+@article{HAM10000, 
+year = {2018}, 
+title = {{The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions}}, 
+author = {Tschandl, Philipp and Rosendahl, Cliff and Kittler, Harald}, 
+journal = {Scientific Data}, 
+doi = {10.1038/sdata.2018.161}, 
+pmid = {30106392}, 
+pmcid = {PMC6091241}, 
+eprint = {1803.10417}, 
+abstract = {{Training of neural networks for automated diagnosis of pigmented skin lesions is hampered by the small size and lack of diversity of available datasets of dermatoscopic images. We tackle this problem by releasing the HAM10000 (“Human Against Machine with 10000 training images”) dataset. We collected dermatoscopic images from different populations acquired and stored by different modalities. Given this diversity we had to apply different acquisition and cleaning methods and developed semi-automatic workflows utilizing specifically trained neural networks. The final dataset consists of 10015 dermatoscopic images which are released as a training set for academic machine learning purposes and are publicly available through the ISIC archive. This benchmark dataset can be used for machine learning and for comparisons with human experts. Cases include a representative collection of all important diagnostic categories in the realm of pigmented lesions. More than 50\% of lesions have been confirmed by pathology, while the ground truth for the rest of the cases was either follow-up, expert consensus, or confirmation by in-vivo confocal microscopy.}}, 
+pages = {180161}, 
+number = {1}, 
+volume = {5}, 
+keywords = {}
+}
+
+@misc{ISIC, 
+title = {{The international skin imaging collaboration}}, 
+author = {ISIC}, 
+url = {https://www.isic-archive.com/}, 
+urldate = {2022-7-19}, 
+keywords = {}
+}
+
+@INPROCEEDINGS{ImageNet,
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Kai Li and Li Fei-Fei},
+  booktitle={2009 IEEE Conference on Computer Vision and Pattern Recognition}, 
+  title={ImageNet: A large-scale hierarchical image database}, 
+  year={2009},
+  volume={},
+  number={},
+  pages={248-255},
+  doi={10.1109/CVPR.2009.5206848}}
+
+@misc{TensorFlow,
+title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+url={https://www.tensorflow.org/},
+note={Software available from tensorflow.org},
+author={
+    Mart\'{i}n~Abadi and
+    Ashish~Agarwal and
+    Paul~Barham and
+    Eugene~Brevdo and
+    Zhifeng~Chen and
+    Craig~Citro and
+    Greg~S.~Corrado and
+    Andy~Davis and
+    Jeffrey~Dean and
+    Matthieu~Devin and
+    Sanjay~Ghemawat and
+    Ian~Goodfellow and
+    Andrew~Harp and
+    Geoffrey~Irving and
+    Michael~Isard and
+    Yangqing Jia and
+    Rafal~Jozefowicz and
+    Lukasz~Kaiser and
+    Manjunath~Kudlur and
+    Josh~Levenberg and
+    Dandelion~Man\'{e} and
+    Rajat~Monga and
+    Sherry~Moore and
+    Derek~Murray and
+    Chris~Olah and
+    Mike~Schuster and
+    Jonathon~Shlens and
+    Benoit~Steiner and
+    Ilya~Sutskever and
+    Kunal~Talwar and
+    Paul~Tucker and
+    Vincent~Vanhoucke and
+    Vijay~Vasudevan and
+    Fernanda~Vi\'{e}gas and
+    Oriol~Vinyals and
+    Pete~Warden and
+    Martin~Wattenberg and
+    Martin~Wicke and
+    Yuan~Yu and
+    Xiaoqiang~Zheng},
+  year={2015},
+}
+
+@misc{ResNetPreprocessingImplementation,
+  title={imagenet\_utils.py},
+  url={https://github.com/keras-team/keras/blob/07e13740fd181fc3ddec7d9a594d8a08666645f6/keras/applications/imagenet\_utils.py},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2016}
+}
+
+@misc{ResNetImplementation,
+  title={resnet.py},
+  url={https://github.com/keras-team/keras/blob/v2.9.0/keras/applications/resnet.py#L440-L459},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2018}
+}
+
+@misc{InceptionImplementation,
+  title={inception\_resnet\_v2.py},
+  url={https://github.com/keras-team/keras/blob/v2.9.0/keras/applications/inception\_resnet\_v2.py},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2017}
+}
+
+@article{InceptionResNet, 
+year = {2016}, 
+title = {{Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning}}, 
+author = {Szegedy, Christian and Ioffe, Sergey and Vanhoucke, Vincent and Alemi, Alex}, 
+journal = {arXiv}, 
+eprint = {1602.07261}, 
+abstract = {{Very deep convolutional networks have been central to the largest advances in image recognition performance in recent years. One example is the Inception architecture that has been shown to achieve very good performance at relatively low computational cost. Recently, the introduction of residual connections in conjunction with a more traditional architecture has yielded state-of-the-art performance in the 2015 ILSVRC challenge; its performance was similar to the latest generation Inception-v3 network. This raises the question of whether there are any benefit in combining the Inception architecture with residual connections. Here we give clear empirical evidence that training with residual connections accelerates the training of Inception networks significantly. There is also some evidence of residual Inception networks outperforming similarly expensive Inception networks without residual connections by a thin margin. We also present several new streamlined architectures for both residual and non-residual Inception networks. These variations improve the single-frame recognition performance on the ILSVRC 2012 classification task significantly. We further demonstrate how proper activation scaling stabilizes the training of very wide residual Inception networks. With an ensemble of three residual and one Inception-v4, we achieve 3.08 percent top-5 error on the test set of the ImageNet classification (CLS) challenge}}, 
+keywords = {}
+}
+
+@article{FoolBoxPaper,
+  doi = {10.21105/joss.02607},
+  url = {https://doi.org/10.21105/joss.02607},
+  year = {2020},
+  publisher = {The Open Journal},
+  volume = {5},
+  number = {53},
+  pages = {2607},
+  author = {Jonas Rauber and Roland Zimmermann and Matthias Bethge and Wieland Brendel},
+  title = {Foolbox Native: Fast adversarial attacks to benchmark the robustness of machine learning models in PyTorch, TensorFlow, and JAX},
+  journal = {Journal of Open Source Software}
+}
+
+@inproceedings{FoolBoxLibrary,
+  title={Foolbox: A Python toolbox to benchmark the robustness of machine learning models},
+  author={Rauber, Jonas and Brendel, Wieland and Bethge, Matthias},
+  booktitle={Reliable Machine Learning in the Wild Workshop, 34th International Conference on Machine Learning},
+  year={2017},
+  url={http://arxiv.org/abs/1707.04131},
+}
+
+@article{FGSM, 
+year = {2014}, 
+title = {{Explaining and Harnessing Adversarial Examples}}, 
+author = {Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian}, 
+journal = {arXiv}, 
+eprint = {1412.6572}, 
+abstract = {{Several machine learning models, including neural networks, consistently misclassify adversarial examples---inputs formed by applying small but intentionally worst-case perturbations to examples from the dataset, such that the perturbed input results in the model outputting an incorrect answer with high confidence. Early attempts at explaining this phenomenon focused on nonlinearity and overfitting. We argue instead that the primary cause of neural networks' vulnerability to adversarial perturbation is their linear nature. This explanation is supported by new quantitative results while giving the first explanation of the most intriguing fact about them: their generalization across architectures and training sets. Moreover, this view yields a simple and fast method of generating adversarial examples. Using this approach to provide examples for adversarial training, we reduce the test set error of a maxout network on the MNIST dataset.}}, 
+keywords = {}
+}
+
+@article{Grad-CAM, 
+year = {2016}, 
+title = {{Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization}}, 
+author = {Selvaraju, Ramprasaath R and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv}, 
+journal = {arXiv}, 
+doi = {10.1007/s11263-019-01228-7}, 
+eprint = {1610.02391}, 
+abstract = {{We propose a technique for producing "visual explanations" for decisions from a large class of CNN-based models, making them more transparent. Our approach - Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting important regions in the image for predicting the concept. Grad-CAM is applicable to a wide variety of CNN model-families: (1) CNNs with fully-connected layers, (2) CNNs used for structured outputs, (3) CNNs used in tasks with multimodal inputs or reinforcement learning, without any architectural changes or re-training. We combine Grad-CAM with fine-grained visualizations to create a high-resolution class-discriminative visualization and apply it to off-the-shelf image classification, captioning, and visual question answering (VQA) models, including ResNet-based architectures. In the context of image classification models, our visualizations (a) lend insights into their failure modes, (b) are robust to adversarial images, (c) outperform previous methods on localization, (d) are more faithful to the underlying model and (e) help achieve generalization by identifying dataset bias. For captioning and VQA, we show that even non-attention based models can localize inputs. We devise a way to identify important neurons through Grad-CAM and combine it with neuron names to provide textual explanations for model decisions. Finally, we design and conduct human studies to measure if Grad-CAM helps users establish appropriate trust in predictions from models and show that Grad-CAM helps untrained users successfully discern a 'stronger' nodel from a 'weaker' one even when both make identical predictions. Our code is available at https://github.com/ramprs/grad-cam/, along with a demo at http://gradcam.cloudcv.org, and a video at youtu.be/COjUB9Izk6E.}}, 
+keywords = {}
+}
