@@ -164,24 +164,6 @@
       For the task of skin lesion classification, the models with attention are clearly superior, in terms of robustness (Fig. \ref{DermResNet50Robustness}). Although the model without attention has slightly higher clean-accuracy (0.905 vs. 0.88), even the slightest perturbation ($\epsilon=0.00125$) is able to reduce its accuracy by 24\% and put the model with attention in the lead. By the time $\epsilon=0.005$, the model is worse than random, and by the time $\epsilon=0.01$, the model is rendered completely useless. It is worth noting that perturbation of this size (Fig. \ref{example_derm_perturbation}) is far from being human perceptible. Meanwhile, at this perturbation radius, the model with attention remains better than random selection.
 
       \begin{figure}[h!]
-        \centering
-        $
-        \begin{array}{l}
-        \includegraphics[width=0.26\linewidth]{graphics/derm_unperturbed.jpg}
-        \end{array}
-        \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
-        \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/derm_e=0.01_difference.jpg}
-        \end{array}
-        \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
-        \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/derm_e=0.01.jpg}
-        \end{array}
-        $
-        \caption{An example of $\epsilon=0.01$ perturbation on the dermatoscopy dataset. 0.01 is the maximum perturbation radius used for this dataset.}
-        \label{example_derm_perturbation}
-      \end{figure}
-      \begin{figure}[h!]
         \begin{tikzpicture}
           \begin{axis}[xtick={0, 0.00125, 0.0025, 0.005, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32}, x tick label style={rotate=45, log ticks with fixed point},xmode=log, log basis x=2, xlabel=Perturbation Radius ($\epsilon$), ylabel=Accuracy, width=\linewidth, height=7cm,legend style={at={(0.95,0.95)},anchor=north east}]
               
@@ -211,24 +193,6 @@
 
       The models for diabetic retinopathy detection tell a slightly different story (Fig. \ref{DRResNet50Robustness}). These models were, overall, much more robust, requiring a perturbation of at least $\epsilon=0.01$ to reduce accuracy by 3\%. As in the skin lesion classification models, the model without attention has a slightly higher clean accuracy (0.832 vs. 0.818). It retains this very small lead until $\epsilon=0.02$, at which point, the accuracy of both models begins falling, but the model with attention does so a bit less dramatically. At the maximum perturbation radius tested ($\epsilon=0.32$) (Fig. \ref{example_dr_perturbation}), the accuracy of the model with attention is over 20 times higher than that of the model without.
 
-      \begin{figure}[h!]
-        \centering
-        $
-        \begin{array}{l}
-        \includegraphics[width=0.26\linewidth]{graphics/dr_unperturbed.jpg}
-        \end{array}
-        \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
-        \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/dr_e=0.32_difference.jpg}
-        \end{array}
-        \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
-        \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/dr_e=0.32.jpg}
-        \end{array}
-        $
-        \caption{An example of $\epsilon=0.32$ perturbation on the fundoscopy dataset. 0.32 is the maximum perturbation radius used for this dataset.}
-        \label{example_dr_perturbation}
-      \end{figure}
       \begin{figure}[h!]
         \begin{tikzpicture}
           \begin{axis}[xtick={0, 0.00125, 0.0025, 0.005, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32}, x tick label style={rotate=45, log ticks with fixed point},xmode=log, log basis x=2, xlabel=Perturbation Radius ($\epsilon$), ylabel=Accuracy, width=\linewidth, height=7cm,legend style={at={(0.05,0.05)},anchor=south west}]
@@ -272,22 +236,62 @@
       The pneumothorax detection models, collectively, were even more robust than the diabetic retinopathy detection models (Fig. \ref{PneumoResNet50Robustness}). After perturbations of $\epsilon=0.32$ (Fig. \ref{example_pneumo_perturbation}), the accuracy of both models met at 0.805. Prior to this, the accuracy of the model without attention hovered 1-2\% above that of the model with attention. However, based on the trajectory of the models' accuracy with respect to $\epsilon$, perturbation radii higher than 0.32 would likely result in the model with attention leapfrogging the model without.
 
       \begin{figure}[h!]
-        \centering
-        $
-        \begin{array}{l}
-        \includegraphics[width=0.26\linewidth]{graphics/pneumo_unperturbed.jpg}
-        \end{array}
-        \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
-        \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/pneumo_e=0.32_difference.jpg}
-        \end{array}
-        \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
-        \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/pneumo_e=0.32.jpg}
-        \end{array}
-        $
-        \caption{An example of $\epsilon=0.32$ perturbation on the chest x-ray dataset. 0.32 is the maximum perturbation radius used for this dataset.}
-        \label{example_pneumo_perturbation}
+        \begin{subfigure}{\linewidth}
+          \centering
+          $
+          \begin{array}{l}
+          \includegraphics[width=0.26\linewidth]{graphics/derm_unperturbed.jpg}
+          \end{array}
+          \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
+          \begin{array}{l}
+            \includegraphics[width=0.26\linewidth]{graphics/derm_e=0.01_difference.jpg}
+          \end{array}
+          \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
+          \begin{array}{l}
+            \includegraphics[width=0.26\linewidth]{graphics/derm_e=0.01.jpg}
+          \end{array}
+          $
+          \caption{An example of $\epsilon=0.01$ perturbation on the dermatoscopy dataset. 0.01 is the maximum perturbation radius used for this dataset.\\}
+          \label{example_derm_perturbation}
+        \end{subfigure}
+        
+        \begin{subfigure}{\linewidth}
+          \centering
+          $
+          \begin{array}{l}
+          \includegraphics[width=0.26\linewidth]{graphics/dr_unperturbed.jpg}
+          \end{array}
+          \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
+          \begin{array}{l}
+            \includegraphics[width=0.26\linewidth]{graphics/dr_e=0.32_difference.jpg}
+          \end{array}
+          \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
+          \begin{array}{l}
+            \includegraphics[width=0.26\linewidth]{graphics/dr_e=0.32.jpg}
+          \end{array}
+          $
+          \caption{An example of $\epsilon=0.32$ perturbation on the fundoscopy dataset. 0.32 is the maximum perturbation radius used for this dataset.\\}
+          \label{example_dr_perturbation}
+        \end{subfigure}
+        \begin{subfigure}{\linewidth}
+          \centering
+          $
+          \begin{array}{l}
+          \includegraphics[width=0.26\linewidth]{graphics/pneumo_unperturbed.jpg}
+          \end{array}
+          \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
+          \begin{array}{l}
+            \includegraphics[width=0.26\linewidth]{graphics/pneumo_e=0.32_difference.jpg}
+          \end{array}
+          \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
+          \begin{array}{l}
+            \includegraphics[width=0.26\linewidth]{graphics/pneumo_e=0.32.jpg}
+          \end{array}
+          $
+          \caption{An example of $\epsilon=0.32$ perturbation on the chest x-ray dataset. 0.32 is the maximum perturbation radius used for this dataset.\\}
+          \label{example_pneumo_perturbation}
+        \end{subfigure}%
+        \caption{Perturbation examples}
       \end{figure}
       \begin{figure}[h!]
         \begin{tikzpicture}
@@ -328,12 +332,19 @@
       \end{figure}
 
     \subsection{InceptionResNetV2 Models}
+  \section{Discussion}
+    \subsection{Analysis of Attention Maps}
+    \subsection{Effects of Attention} % What happened? Did it work?
+    \subsection{Conclusion} % Result, contribution, future work
     
-
 %%%%%%%%% REFERENCES
 {\small
 \bibliographystyle{ieee_fullname}
 \bibliography{egbib}
 }
+
+\pagebreak
+\appendix
+\section{Additional Figures}
 
 \end{document}
