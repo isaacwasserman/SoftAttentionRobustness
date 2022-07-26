@@ -19,6 +19,8 @@
 \usepackage{relsize}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
+\usepackage{subcaption}
+% \usepackage{float}
 \pgfplotsset{compat=1.7}
 
 
@@ -66,7 +68,7 @@
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
-  Convolutional neural network-based medical image classifiers have been shown to be especially susceptible to adversarial examples. Such instabilities are likely to be unacceptable in the future of automated diagnosis. Though statistical adversarial example detection methods have proven to be effective defense mechanisms, additional research is necessary that investigates the fundamental vulnerabilities of deep-learning-based systems and how best to build models that jointly maximize traditional and robust accuracy. This paper presents the inclusion of attention mechanisms in CNN-based medical image classifiers as a reliable and method for increasing robust accuracy without sacrifice. This method is able to increase robust accuracy by up to 16\% in typical adversarial scenarios and up to 2700\% in extreme cases. Additionally, the behavior in attack scenarios of vanilla CNNs and CNNs with attention is compared through the use Grad-CAM attention mapping.
+  Convolutional neural network-based medical image classifiers have been shown to be especially susceptible to adversarial examples. Such instabilities are likely to be unacceptable in the future of automated diagnosis. Though statistical adversarial example detection methods have proven to be effective defense mechanisms, additional research is necessary that investigates the fundamental vulnerabilities of deep-learning-based systems and how best to build models that jointly maximize traditional and robust accuracy. This paper presents the inclusion of attention mechanisms in CNN-based medical image classifiers as a reliable and method for increasing robust accuracy without sacrifice. This method is able to increase robust accuracy by up to 16\% in typical adversarial scenarios and up to 2700\% in extreme cases. Additionally, the behavior in attack scenarios of vanilla CNNs and CNNs with attention is compared through the use Grad-CAM activation mapping.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
@@ -131,11 +133,11 @@
         \centering
         $
         \begin{array}{l}
-        \includegraphics[width=0.4\linewidth]{graphics/unprocessedxray.png}
+        \includegraphics[width=0.4\linewidth]{graphics/ResNet-50/unprocessedxray.png}
         \end{array}
         \mathlarger{\mathlarger{\mathlarger{\mathlarger{\rightarrow}}}}
         \begin{array}{l}
-          \includegraphics[width=0.4\linewidth]{graphics/processedxray.jpg}
+          \includegraphics[width=0.4\linewidth]{graphics/ResNet-50/processedxray.jpg}
         \end{array}
         $
         \caption{Visualization of the chest x-ray image preprocessing pipeline}
@@ -240,15 +242,15 @@
           \centering
           $
           \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/derm_unperturbed.jpg}
+          \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/derm_unperturbed.jpg}
           \end{array}
           \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
           \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/derm_e=0.01_difference.jpg}
+            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/derm_e=0.01_difference.jpg}
           \end{array}
           \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
           \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/derm_e=0.01.jpg}
+            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/derm_e=0.01.jpg}
           \end{array}
           $
           \caption{An example of $\epsilon=0.01$ perturbation on the dermatoscopy dataset. 0.01 is the maximum perturbation radius used for this dataset.\\}
@@ -259,15 +261,15 @@
           \centering
           $
           \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/dr_unperturbed.jpg}
+          \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/dr_unperturbed.jpg}
           \end{array}
           \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
           \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/dr_e=0.32_difference.jpg}
+            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/dr_e=0.32_difference.jpg}
           \end{array}
           \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
           \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/dr_e=0.32.jpg}
+            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/dr_e=0.32.jpg}
           \end{array}
           $
           \caption{An example of $\epsilon=0.32$ perturbation on the fundoscopy dataset. 0.32 is the maximum perturbation radius used for this dataset.\\}
@@ -277,15 +279,15 @@
           \centering
           $
           \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/pneumo_unperturbed.jpg}
+          \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/pneumo_unperturbed.jpg}
           \end{array}
           \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
           \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/pneumo_e=0.32_difference.jpg}
+            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/pneumo_e=0.32_difference.jpg}
           \end{array}
           \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
           \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/pneumo_e=0.32.jpg}
+            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/pneumo_e=0.32.jpg}
           \end{array}
           $
           \caption{An example of $\epsilon=0.32$ perturbation on the chest x-ray dataset. 0.32 is the maximum perturbation radius used for this dataset.\\}
@@ -293,6 +295,7 @@
         \end{subfigure}%
         \caption{Perturbation examples}
       \end{figure}
+
       \begin{figure}[h!]
         \begin{tikzpicture}
           \begin{axis}[xtick={0, 0.00125, 0.0025, 0.005, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32}, x tick label style={rotate=45, log ticks with fixed point},xmode=log, log basis x=2, xlabel=Perturbation Radius ($\epsilon$), ylabel=Accuracy, width=\linewidth, height=7cm,legend style={at={(0.05,0.05)},anchor=south west}]
@@ -333,9 +336,61 @@
 
     \subsection{InceptionResNetV2 Models}
   \section{Discussion}
-    \subsection{Analysis of Attention Maps}
-    \subsection{Effects of Attention} % What happened? Did it work?
+    \subsection{Analysis of Perturbations and Activation Maps}
+      In an attempt to better understand the principles and behaviors that led the CNNs with attention to perform better in both clean and adversarial scenarios, perturbation difference maps and Grad-CAM activation maps were generated for a select sample of images on each model. Individually, these difference maps and activation maps were unremarkable. However, a number of dataset specific patterns were noticed throughout the images used for this analysis.
+      \subsubsection{ResNet-50 Models}
+        While imperceptible in the final images, the perturbations for dermatoscopic and fundoscopic images were found to carry easily perceptible information about the source image, when the changes were scaled to a range of $[0,255]$. In these cases, the adversarial ``noise'' contained the shape of the lesion or eye. For dermatoscopic images, this shape was in the form of a densely perturbed ring enclosing a sparsely perturbed center (Fig. \ref{LesionShape}). This phenomenon was most visible when $\epsilon=0.00125$. For the fundoscopic images, this shape was represented by a sparsely perturbed ellipse. In the attacks generated for the model with attention, the shape of this ellipse occasionally diverged from the true shape of the eye (Fig. \ref{EyeShapeDivergence}).
+
+        \begin{figure}[h]
+          \centering
+          \begin{subfigure}{.4\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{graphics/ResNet-50/LesionOutline.pdf}
+            \caption{Shape of skin lesion found in adversarial ``noise''\\}
+            \label{LesionShape}
+          \end{subfigure}
+          \begin{subfigure}{.4\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{graphics/ResNet-50/EyeShapeDivergence.pdf}
+            \caption{Divergence from shape of eye\\}
+            \label{EyeShapeDivergence}
+          \end{subfigure}
+          \caption{Shape information carried over into perturbations}
+        \end{figure}
+
+        \begin{figure}[h]
+          \centering
+          \includegraphics[width=\linewidth]{graphics/ResNet-50/pneumo_with_attention.pdf}
+          \caption{Comparison of activation maps (with attention) for perturbed and unperturbed chest x-ray}
+          \label{PneumoWithAttention}
+        \end{figure}
+
+        \begin{figure}[h]
+          \centering
+          \includegraphics[width=\linewidth]{graphics/ResNet-50/different_maps.pdf}
+          \caption{Comparison of activation maps (without attention) for perturbed and unperturbed chest x-ray}
+          \label{DifferentMaps}
+        \end{figure}
+
+        In the attacks tailored to the fundoscopic image models, perturbations introduced dark splotchy patterns to the eye area (Fig. \ref{CottonWool}). Based on diagnostic literature, these spots could be ``attempts'' by the attack to emulate cotton-wool spots or hemorrhages, key indicators of diabetic retinopathy \cite{WillsEye}. Similar patterns appear in the perturbations for the chest x-ray model with attention (Fig. \ref{PneumoWithAttention}) (these spots are larger and less speckled), though these do not appear similar to the key indicators of pneumothoraces (air in pleural space, misplaced lung edge, less distinct lung markings, etc.) \cite{UnofficialGuide}, it remains unclear whether the attack could be emulating these features indirectly.
+
+        \begin{figure}[h]
+          \centering
+          \includegraphics[width=0.5\linewidth]{graphics/ResNet-50/cotton_wool.pdf}
+          \caption{Dark splotches in perturbation of fundoscopic images}
+          \label{CottonWool}
+        \end{figure}
+
+        While the activation maps for the dermatoscopic and fundoscopic image models were invariant to perturbation, the chest x-ray model without attention occasionally produced very different activation maps under adversarial attacks (Fig. \ref{DifferentMaps}). However, this was only true under successful attacks (of which there were few).
+
+        For all three datasets, models with attention produced activation maps that were very different from their baseline counterparts; in most cases, the regions of highest activation did not match across models. Additionally, the activation maps for the chest x-ray model with attention were highly focused, typically having a single region of significance (Fig. \ref{DifferentMaps}).
+
+        
+
+      \subsubsection{InceptionResNetV2 Models}
+      
     \subsection{Conclusion} % Result, contribution, future work
+      
     
 %%%%%%%%% REFERENCES
 {\small
@@ -345,6 +400,5 @@
 
 \pagebreak
 \appendix
-\section{Additional Figures}
 
 \end{document}

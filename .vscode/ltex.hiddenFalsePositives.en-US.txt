@@ -5,3 +5,8 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFinlayson et al. (2019) was the first paper to look into the susceptibility of medical image models to adversarial image attacks.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFinlayson et al. (2019) was the first paper to look into the susceptibility of medical diagnosis models to adversarial image attacks.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThis correlation between sharp loss landscapes and more vulnerable models is outlined by Madry et al. (2017) which attributes this sharpness to overparametrization.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWhile imperceptible in the final images, the perturbations for dermatoscopic and fundoscopic images were found to carry easily perceptible information about the source image, when the changes were scaled to a range of \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn the dermatoscopic images, the adversarial “noise” contained the shape of the lesion in the form of a densely perturbed ring enclosing a sparsely perturbed center.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFor dermatoscopic images, this shape was in the form of a densely perturbed ring enclosing a sparsely perturbed center (Fig.\\E$"}
+{"rule":"THE_SUPERLATIVE","sentence":"^\\QIn most cases, the region of highest activation did not match across models\\E$"}
+{"rule":"THE_SUPERLATIVE","sentence":"^\\QIn most cases, the region of highest activation did not match across models.\\E$"}
