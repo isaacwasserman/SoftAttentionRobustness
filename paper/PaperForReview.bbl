@@ -77,6 +77,12 @@ Samuel~G. Finlayson, John~D. Bowers, Joichi Ito, Jonathan~L. Zittrain,
 \newblock {Adversarial attacks on medical machine learning}.
 \newblock {\em Science}, 363(6433):1287--1289, 2019.
 
+\bibitem{WillsEye}
+Adam~A Gerstenblith, Michael~P Rabinowitz, Behin~I Barahimi, Christopher~M
+  Fecarotta, Mark~A Friedberg, and Christopher~J Rapuano.
+\newblock {\em Wills Eye Manual}.
+\newblock Lippincott Williams \& Wilkins, 2012.
+
 \bibitem{VisionTransformerSurvey}
 Kai Han, Yunhe Wang, Hanting Chen, Xinghao Chen, Jianyuan Guo, Zhenhua Liu,
   Yehui Tang, An Xiao, Chunjing Xu, Yixing Xu, Zhaohui Yang, Yiman Zhang, and
@@ -183,6 +189,11 @@ Jonas Rauber, Roland Zimmermann, Matthias Bethge, and Wieland Brendel.
   of machine learning models in pytorch, tensorflow, and jax.
 \newblock {\em Journal of Open Source Software}, 5(53):2607, 2020.
 
+\bibitem{UnofficialGuide}
+Mark Rodrigues and Zeshan Qureshi.
+\newblock {\em The Unofficial Guide to Radiology}.
+\newblock Zeshan Qureshi, 2014.
+
 \bibitem{muzero}
 Julian Schrittwieser, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan,
   Laurent Sifre, Simon Schmitt, Arthur Guez, Edward Lockhart, Demis Hassabis,
@@ -224,7 +235,7 @@ Erico Tjoa and Cuntai Guan.
 
 \bibitem{DeiT}
 Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre
-  Sablayrolles, and Hervé Jégou.
+  Sablayrolles, and Herv\'{e} J\'{e}gou.
 \newblock {Training data-efficient image transformers \& distillation through
   attention}.
 \newblock {\em arXiv}, 2020.

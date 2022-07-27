@@ -160,9 +160,6 @@
 \@writefile{brf}{\backcite{AttentionSkinCancerClassification}{{4}{3.4}{subsection.3.4}}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Results}{4}{section.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.\nobreakspace  {}ResNet-50 Models}{4}{subsection.4.1}\protected@file@percent }
-\bibstyle{ieee_fullname}
-\bibdata{egbib}
-\bibcite{TensorFlow}{1}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Clean- and robust-accuracy of ResNet-50 models for skin lesion classification. Dashed lines represent clean-accuracy.\relax }}{5}{figure.caption.2}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{DermResNet50Robustness}{{2}{5}{Clean- and robust-accuracy of ResNet-50 models for skin lesion classification. Dashed lines represent clean-accuracy.\relax }{figure.caption.2}{}}
@@ -185,9 +182,33 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Perturbation examples\relax }}{5}{figure.caption.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.\nobreakspace  {}InceptionResNetV2 Models}{5}{subsection.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Discussion}{5}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.\nobreakspace  {}Analysis of Attention Maps}{5}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.\nobreakspace  {}Effects of Attention}{5}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\hskip -1em.\nobreakspace  {}Conclusion}{5}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.\nobreakspace  {}Analysis of Perturbations and Activation Maps}{5}{subsection.5.1}\protected@file@percent }
+\citation{WillsEye}
+\citation{UnofficialGuide}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Clean- and robust-accuracy of ResNet-50 models for pneumothorax detection. Dashed lines represent clean-accuracy.\relax }}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{PneumoResNet50Robustness}{{5}{6}{Clean- and robust-accuracy of ResNet-50 models for pneumothorax detection. Dashed lines represent clean-accuracy.\relax }{figure.caption.5}{}}
+\newlabel{PneumoResNet50Robustness@cref}{{[figure][5][]5}{[1][5][]6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}ResNet-50 Models}{6}{subsubsection.5.1.1}\protected@file@percent }
+\newlabel{LesionShape}{{6a}{6}{Shape of skin lesion found in adversarial ``noise''\\\relax }{figure.caption.6}{}}
+\newlabel{LesionShape@cref}{{[subfigure][1][6]6a}{[1][6][]6}}
+\newlabel{sub@LesionShape}{{a}{6}{Shape of skin lesion found in adversarial ``noise''\\\relax }{figure.caption.6}{}}
+\newlabel{sub@LesionShape@cref}{{[subfigure][1][6]6a}{[1][6][]6}}
+\newlabel{EyeShapeDivergence}{{6b}{6}{Divergence from shape of eye\\\relax }{figure.caption.6}{}}
+\newlabel{EyeShapeDivergence@cref}{{[subfigure][2][6]6b}{[1][6][]6}}
+\newlabel{sub@EyeShapeDivergence}{{b}{6}{Divergence from shape of eye\\\relax }{figure.caption.6}{}}
+\newlabel{sub@EyeShapeDivergence@cref}{{[subfigure][2][6]6b}{[1][6][]6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Shape information carried over into perturbations\relax }}{6}{figure.caption.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Comparison of activation maps (with attention) for perturbed and unperturbed chest x-ray\relax }}{6}{figure.caption.7}\protected@file@percent }
+\newlabel{PneumoWithAttention}{{7}{6}{Comparison of activation maps (with attention) for perturbed and unperturbed chest x-ray\relax }{figure.caption.7}{}}
+\newlabel{PneumoWithAttention@cref}{{[figure][7][]7}{[1][6][]6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of activation maps (without attention) for perturbed and unperturbed chest x-ray\relax }}{6}{figure.caption.8}\protected@file@percent }
+\newlabel{DifferentMaps}{{8}{6}{Comparison of activation maps (without attention) for perturbed and unperturbed chest x-ray\relax }{figure.caption.8}{}}
+\newlabel{DifferentMaps@cref}{{[figure][8][]8}{[1][6][]6}}
+\@writefile{brf}{\backcite{WillsEye}{{6}{5.1.1}{figure.caption.8}}}
+\@writefile{brf}{\backcite{UnofficialGuide}{{6}{5.1.1}{figure.caption.8}}}
+\bibstyle{ieee_fullname}
+\bibdata{egbib}
+\bibcite{TensorFlow}{1}
 \bibcite{AttentiveCNNRobustness}{2}
 \bibcite{NIH-AI}{3}
 \bibcite{AI-CDSS}{4}
@@ -199,38 +220,41 @@
 \bibcite{RACL}{10}
 \bibcite{ViT}{11}
 \bibcite{Finlayson}{12}
-\bibcite{VisionTransformerSurvey}{13}
-\bibcite{ResNet}{14}
-\bibcite{Natural-Adv}{15}
-\bibcite{DSRNA}{16}
-\bibcite{Huang}{17}
-\bibcite{ISIC}{18}
-\bibcite{alphafold}{19}
-\bibcite{KaggleDR}{20}
-\bibcite{MORAS}{21}
-\bibcite{Swin}{22}
-\bibcite{MaNiu}{23}
-\bibcite{Madry}{24}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Clean- and robust-accuracy of ResNet-50 models for pneumothorax detection. Dashed lines represent clean-accuracy.\relax }}{6}{figure.caption.5}\protected@file@percent }
-\newlabel{PneumoResNet50Robustness}{{5}{6}{Clean- and robust-accuracy of ResNet-50 models for pneumothorax detection. Dashed lines represent clean-accuracy.\relax }{figure.caption.5}{}}
-\newlabel{PneumoResNet50Robustness@cref}{{[figure][5][]5}{[1][5][]6}}
-\bibcite{AdvRush}{25}
-\bibcite{Paschali}{26}
-\bibcite{FoolBoxLibrary}{27}
-\bibcite{FoolBoxPaper}{28}
-\bibcite{muzero}{29}
-\bibcite{Grad-CAM}{30}
-\bibcite{RobustTransformers}{31}
-\bibcite{InceptionResNet}{32}
-\bibcite{Intro-Adv}{33}
-\bibcite{Med-XAI}{34}
-\bibcite{DeiT}{35}
-\bibcite{HAM10000}{36}
-\bibcite{RobustVsAccuracy}{37}
-\bibcite{PVT}{38}
-\bibcite{ChestX-Ray14}{39}
-\bibcite{AttentionForFineGrainedClassification}{40}
-\bibcite{medical-cnn-survey}{41}
-\bibcite{UnderstandingTransformerRobustness}{42}
-\@writefile{toc}{\contentsline {section}{\numberline {A}\hskip -1em.\nobreakspace  {}Additional Figures}{8}{appendix.A}\protected@file@percent }
+\bibcite{WillsEye}{13}
+\bibcite{VisionTransformerSurvey}{14}
+\bibcite{ResNet}{15}
+\bibcite{Natural-Adv}{16}
+\bibcite{DSRNA}{17}
+\bibcite{Huang}{18}
+\bibcite{ISIC}{19}
+\bibcite{alphafold}{20}
+\bibcite{KaggleDR}{21}
+\bibcite{MORAS}{22}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Dark splotches in perturbation of fundoscopic images\relax }}{7}{figure.caption.9}\protected@file@percent }
+\newlabel{CottonWool}{{9}{7}{Dark splotches in perturbation of fundoscopic images\relax }{figure.caption.9}{}}
+\newlabel{CottonWool@cref}{{[figure][9][]9}{[1][6][]7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}InceptionResNetV2 Models}{7}{subsubsection.5.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.\nobreakspace  {}Conclusion}{7}{subsection.5.2}\protected@file@percent }
+\bibcite{Swin}{23}
+\bibcite{MaNiu}{24}
+\bibcite{Madry}{25}
+\bibcite{AdvRush}{26}
+\bibcite{Paschali}{27}
+\bibcite{FoolBoxLibrary}{28}
+\bibcite{FoolBoxPaper}{29}
+\bibcite{UnofficialGuide}{30}
+\bibcite{muzero}{31}
+\bibcite{Grad-CAM}{32}
+\bibcite{RobustTransformers}{33}
+\bibcite{InceptionResNet}{34}
+\bibcite{Intro-Adv}{35}
+\bibcite{Med-XAI}{36}
+\bibcite{DeiT}{37}
+\bibcite{HAM10000}{38}
+\bibcite{RobustVsAccuracy}{39}
+\bibcite{PVT}{40}
+\bibcite{ChestX-Ray14}{41}
+\bibcite{AttentionForFineGrainedClassification}{42}
+\bibcite{medical-cnn-survey}{43}
+\bibcite{UnderstandingTransformerRobustness}{44}
 \gdef \@abspage@last{8}

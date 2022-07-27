@@ -2,3 +2,9 @@
 *.pkl filter=lfs diff=lfs merge=lfs -text
 .hdf5 filter=lfs diff=lfs merge=lfs -text
 *.hdf5 filter=lfs diff=lfs merge=lfs -text
+<<<<<<< HEAD
+.tar.gz filter=lfs diff=lfs merge=lfs -text
+=======
+>>>>>>> 602c42427aec7cdc64be8c65dccc9f15628b0859
+.ipynb_checkpoints/* filter=lfs diff=lfs merge=lfs -text
+compare.ipynb filter=lfs diff=lfs merge=lfs -text
