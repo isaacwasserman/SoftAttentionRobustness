@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  27 JUL 2022 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.20)  27 JUL 2022 17:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -812,7 +812,14 @@ Overfull \hbox (2.70378pt too wide) in paragraph at lines 41--54
  []$[][][][][]$ 
  []
 
-) [4 <./graphics/ResNet-50/unprocessedxray.png (PNG copy)> <./graphics/ResNet-50/processedxray.jpg> <./graphics/ResNet-50/derm_unperturbed.jpg> <./graphics/ResNet-50/derm_e=0.01_difference.jpg> <./graphics/ResNet-50/derm_e=0.01.jpg> <./graphics/ResNet-50/dr_unperturbed.jpg> <./graphics/ResNet-50/dr_e=0.32_difference.jpg> <./graphics/ResNet-50/dr_e=0.32.jpg> <./graphics/ResNet-50/pneumo_unperturbed.jpg> <./graphics/ResNet-50/pneumo_e=0.32_difference.jpg> <./graphics/ResNet-50/pneumo_e=0.32.jpg>] (./figures/ResNetDermPlot.tex) (./figures/ResNetDRPlot.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./figures/ResNetDermPlot.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./figures/ResNetDRPlot.tex
 NOTE: coordinate (0Y0.0e0],1Y8.32e-1]) has been dropped because it is unbounded (in x). (see also unbounded coords=jump). 
 NOTE: coordinate (0Y0.0e0],1Y8.18e-1]) has been dropped because it is unbounded (in x). (see also unbounded coords=jump). 
 
@@ -822,7 +829,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [5] (./figures/IRV2DermPlot.tex) (./figures/IRV2DRPlot.tex) (./figures/IRV2PneumoPlot.tex
+) [4 <./graphics/ResNet-50/unprocessedxray.png (PNG copy)> <./graphics/ResNet-50/processedxray.jpg>] [5 <./graphics/ResNet-50/derm_unperturbed.jpg> <./graphics/ResNet-50/derm_e=0.01_difference.jpg> <./graphics/ResNet-50/derm_e=0.01.jpg> <./graphics/ResNet-50/dr_unperturbed.jpg> <./graphics/ResNet-50/dr_e=0.32_difference.jpg> <./graphics/ResNet-50/dr_e=0.32.jpg> <./graphics/ResNet-50/pneumo_unperturbed.jpg> <./graphics/ResNet-50/pneumo_e=0.32_difference.jpg> <./graphics/ResNet-50/pneumo_e=0.32.jpg>] (./figures/IRV2DermPlot.tex) (./figures/IRV2DRPlot.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./figures/IRV2PneumoPlot.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -875,7 +886,7 @@ Package pdftex.def Info: graphics/ResNet-50/cotton_wool.pdf  used on input line 
 ]
 
 pdfTeX warning: pdflatex (file ./graphics/ResNet-50/comparison_small.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<graphics/ResNet-50/comparison_small.pdf, id=484, 6905.35841pt x 12285.9pt>
+<graphics/ResNet-50/comparison_small.pdf, id=482, 6905.35841pt x 12285.9pt>
 File: graphics/ResNet-50/comparison_small.pdf Graphic file (type pdf)
 <use graphics/ResNet-50/comparison_small.pdf>
 Package pdftex.def Info: graphics/ResNet-50/comparison_small.pdf  used on input line 221.
@@ -891,7 +902,7 @@ Overfull \hbox (67.48048pt too wide) in paragraph at lines 221--222
  <./graphics/ResNet-50/comparison_small.pdf>]
 
 pdfTeX warning: pdflatex (file ./graphics/IRV2/0.00125_comparison_small.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<graphics/IRV2/0.00125_comparison_small.pdf, id=1027, 6916.16882pt x 12285.9pt>
+<graphics/IRV2/0.00125_comparison_small.pdf, id=1025, 6916.16882pt x 12285.9pt>
 File: graphics/IRV2/0.00125_comparison_small.pdf Graphic file (type pdf)
 <use graphics/IRV2/0.00125_comparison_small.pdf>
 Package pdftex.def Info: graphics/IRV2/0.00125_comparison_small.pdf  used on input line 227.
@@ -908,21 +919,21 @@ Overfull \hbox (67.95737pt too wide) in paragraph at lines 227--228
 Package rerunfilecheck Info: File `PaperForReview.out' has not changed.
 (rerunfilecheck)             Checksum: F9D3CAFF4EBC5A0DD1B3B64639C53136;3697.
 Package rerunfilecheck Info: File `PaperForReview.brf' has not changed.
-(rerunfilecheck)             Checksum: 72A2CFD9591DBDA4D68FF49465C076AB;3647.
+(rerunfilecheck)             Checksum: 7672DF5D30EFA97E63607D6000FEB090;3647.
  ) 
 Here is how much of TeX's memory you used:
  36308 strings out of 478286
  855097 string characters out of 5846727
- 1340933 words of memory out of 5000000
+ 1351171 words of memory out of 5000000
  53787 multiletter control sequences out of 15000+600000
  501942 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,23n,91p,1433b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,23n,91p,1439b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on PaperForReview.pdf (12 pages, 74530420 bytes).
+Output written on PaperForReview.pdf (12 pages, 74530550 bytes).
 PDF statistics:
- 1657 PDF objects out of 1728 (max. 8388607)
- 459 compressed objects within 5 object streams
+ 1655 PDF objects out of 1728 (max. 8388607)
+ 457 compressed objects within 5 object streams
  94 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
