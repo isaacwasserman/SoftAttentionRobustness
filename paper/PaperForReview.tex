@@ -174,7 +174,7 @@
 
       For the skin lesion classification and diabetic retinopathy detection tasks, the baseline and attentive architectures performed near-identically in adversarial scenarios. The diabetic retinopathy task slightly favored the baseline, whereas skin lesion classification slightly favored the attentive model; however, at most, there was a 6\% discrepancy between their accuracies ($\epsilon = 0.00125$).
       
-      In the pneumothorax detection task, the model with attention performed significantly worse under adversarial scenarios. The model reached an unusable accuracy after the perturbation radius was pushed beyond 0.00125, while the baseline remained usable with a perturbation radius of 0.005.
+      In the pneumothorax detection task, the model with attention performed significantly worse under adversarial scenarios. The model reached a level of accuracy worse than random selection after the perturbation radius was pushed beyond 0.00125, while the baseline remained usable with a perturbation radius of 0.005.
 
   \section{Discussion}
     \subsection{Analysis of Perturbations and Activation Maps}
@@ -186,7 +186,7 @@
         \input figures/ResNetPneumoWithAttentionActivation
         \input figures/ResNetPneumoWithoutAttentionActivation
 
-        In the attacks tailored to the fundoscopic image models, perturbations introduced dark splotchy patterns to the eye area (Fig. \ref{CottonWool}). Based on diagnostic literature, these spots could be ``attempts'' by the attack to emulate cotton-wool spots or hemorrhages, key indicators of diabetic retinopathy \cite{WillsEye}. Similar patterns appear in the perturbations for the chest x-ray model with attention (Fig. \ref{PneumoWithAttention}) (these spots are larger and less speckled), though these do not appear similar to the key indicators of pneumothoraces (air in pleural space, misplaced lung edge, less distinct lung markings, etc.) \cite{UnofficialGuide}, it remains unclear whether the attack could be emulating these features indirectly.
+        In the attacks tailored to the fundoscopic image models, perturbations introduced dark splotchy patterns to the eye area (Fig. \ref{CottonWool}). Based on diagnostic literature, these spots could be ``attempts'' by the attack to emulate cotton-wool spots or hemorrhages, key indicators of diabetic retinopathy \cite{WillsEye}. Similar patterns appear in the perturbations for the chest x-ray model with attention (Fig. \ref{PneumoWithAttention}) (these spots are larger and less speckled), though these do not appear similar to the key indicators of pneumothoraces (air in pleural space, misplaced lung edge, less distinct lung markings, etc.) \cite{UnofficialGuide}, it remains unclear whether the attack could be emulating these features indirectly. If so, this behavior and its perceptibility in the difference maps could be responsible for medical adversarial images being so easily detected, as observed by Ma and Niu et al. (2021) \cite{MaNiu}.
 
         \input figures/ResNetCottonWool
 
@@ -194,12 +194,19 @@
 
         For all three datasets, models with attention produced activation maps that were very different from their baseline counterparts; in most cases, the regions of highest activation did not match across models. Additionally, the activation maps for the chest x-ray model with attention were highly focused, typically having a single region of significance (Fig. \ref{DifferentMaps}).
 
-        
-
       \subsubsection{InceptionResNetV2 Models}
-      
+        Similar to the ResNet-50-based models, perturbations of dermatoscopic and fundoscopic images carried perceptible information about the source image. Across all three datasets, the perturbations for attentive models were generally higher contrast; in other words, the difference in the level of perturbation between the most- and least-perturbed pixels was greater. Like the ResNet-50 models, the perturbations targeting fundoscopic and chest x-ray images produced intensely perturbed splotches. However, unlike the ResNet-50 models, the splotches on the x-rays appear in both the baseline and attentive models and are less widespread (Fig. \ref{IRV2Comparison}).
+
+        The activation maps for all skin lesion classification and diabetic retinopathy detection models were greatly impacted by perturbation, often being nearly inverted, indicating that the model is focusing on the incorrect regions of the image. Perturbations appeared to have less of an effect on the activation maps of the pneumothorax detection models. Like the ResNet-50 models, the activation maps of the attentive models shared no similarity with those of the baselines. Also, similar to its ResNet-50 counterpart, the attention maps of the chest x-ray models were significantly more focused than those of the other models (Fig. \ref{IRV2Comparison}).
+
     \subsection{Conclusion} % Result, contribution, future work
-      
+      The inclusion of a soft-attention block was able to improve the robustness of ResNet-50 on two of the three medical classification tasks tested, while only slightly decreasing clean-accuracy. Additionally, previous experiments have shown the ability of this architectural modification to increase clean accuracy \cite{AttentionSkinCancerClassification}. Though soft-attention was unable to significantly improve the robust accuracy of the InceptionResNetV2 models, its inclusion was not detrimental to clean- or robust-accuracy in two of three tasks. Further investigation is necessary to understand why soft-attention was detrimental to the performance of pneumothorax detection models.
+
+      These results suggest that, in most cases, the inclusion of a soft-attention block is beneficial (or at least not harmful) to the overall performance of medical image classification architectures. This modification has potential to improve accuracy and even greater potential to improve model robustness.
+
+      Additionally, the observations above regarding perturbation behavior suggest that PGD may be inadvertently emulating cotton-wool spots, hemorrhages, and lung boundaries. The fact that these patterns are so easily visible in the perturbations may lend further insight into why adversarial images targeting medical classifiers are so easily detected.
+
+      Future research into the susceptibility of medical image classifiers to adversarial images may wish to investigate this hypothesis by creating a modified PGD attack algorithm which maximizes the perceived randomness of the perturbation, as this strategy could lead to less detectable attacks.
     
 %%%%%%%%% REFERENCES
 {\small
@@ -207,7 +214,19 @@
 \bibliography{egbib}
 }
 
-\pagebreak
+\clearpage
 \appendix
+  \section{Additional Figures}
+    \begin{figure}[h!]
+      \includegraphics[height=7.5in]{graphics/ResNet-50/comparison_small.pdf}
+      \caption{Perturbations and attention maps of skin lesion classification, diabetic retinopathy detection, and pneumothorax detection models using ResNet-50 architecture at $\epsilon=0.01$, $\epsilon=0.32$, and $\epsilon=0.32$ respectively.}
+      \label{ResNet50Comparison}
+    \end{figure}
+    \clearpage
+    \begin{figure}[h!]
+      \includegraphics[height=7.5in]{graphics/IRV2/0.00125_comparison_small.pdf}
+      \caption{Perturbations and attention maps of skin lesion classification, diabetic retinopathy detection, and pneumothorax detection models using InceptionResNetV2 architecture at $\epsilon=0.00125$.}
+      \label{IRV2Comparison}
+    \end{figure}
 
 \end{document}
