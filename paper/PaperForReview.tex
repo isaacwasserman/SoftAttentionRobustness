@@ -20,6 +20,7 @@
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{subcaption}
+\usepackage{multicol}
 % \usepackage{float}
 \pgfplotsset{compat=1.7}
 
@@ -129,19 +130,7 @@
 
       In an attempt to solve for the relatively large range in image contrast of the grayscale chest x-rays, all images were put through a gaussian filtering pipeline that maximized the prominence of edges and shadowed areas. Images are first min-max normalized to the range $[0,255]$. A gaussian blur is applied to a copy of this image; the kernel size of the filter is computed based on parameters $\sigma_x=20,\,\,\, \sigma_y=0$. This blurred image $\text{blur}(x)$ is subsequently added to the original normalized image $x$ according to the following formula $x' = 4x - 4(\text{blur}(x)) + 128$.
 
-      \begin{figure}[h!]
-        \centering
-        $
-        \begin{array}{l}
-        \includegraphics[width=0.4\linewidth]{graphics/ResNet-50/unprocessedxray.png}
-        \end{array}
-        \mathlarger{\mathlarger{\mathlarger{\mathlarger{\rightarrow}}}}
-        \begin{array}{l}
-          \includegraphics[width=0.4\linewidth]{graphics/ResNet-50/processedxray.jpg}
-        \end{array}
-        $
-        \caption{Visualization of the chest x-ray image preprocessing pipeline}
-      \end{figure}
+      \input figures/XRayProcessingPipeline
 
       This pipeline was initially used for the fundoscopy images as well, but early results revealed that this type of processing was not well suited to the task.
 
@@ -159,227 +148,47 @@
     \subsection{Evaluation and Analysis of Robustness}
       After training, the models' clean- and robust-accuracy was evaluated using the FoolBox \cite{FoolBoxPaper}\cite{FoolBoxLibrary} library's implementation of $l_\infty$ projected gradient descent attacks. Each set of models was tested at increasing epsilons (perturbation radii). Attacks of these perturbation radii were created for each image in the test sets. Unweighted accuracy was calculated for each perturbation radius.
 
+      \input figures/ExamplePerturbations
+
       Small samples of the resultant adversarial images were saved and used to analyze model behavior using gradient weighted class activation mapping (Grad-CAM) \cite{Grad-CAM} localization maps. These maps were generated using the Grad-CAM implementation of Datta et al. (2021) \cite{AttentionSkinCancerClassification} and provide attention-map-esque representations of spatial importance for neural networks regardless of whether they utilize attention mechanisms or not. For each model, these maps were generated at each epsilon for 16 sample images with and without perturbations applied. Maps for a given starting image were compared to their perturbed counterpart as well as against other models and perturbation radii.
 
   \section{Results}
     \subsection{ResNet-50 Models}
+      \input figures/ResNetDermPlot
+      \input figures/ResNetDRPlot
+      \input figures/ResNetPneumoPlot
+
       For the task of skin lesion classification, the models with attention are clearly superior, in terms of robustness (Fig. \ref{DermResNet50Robustness}). Although the model without attention has slightly higher clean-accuracy (0.905 vs. 0.88), even the slightest perturbation ($\epsilon=0.00125$) is able to reduce its accuracy by 24\% and put the model with attention in the lead. By the time $\epsilon=0.005$, the model is worse than random, and by the time $\epsilon=0.01$, the model is rendered completely useless. It is worth noting that perturbation of this size (Fig. \ref{example_derm_perturbation}) is far from being human perceptible. Meanwhile, at this perturbation radius, the model with attention remains better than random selection.
-
-      \begin{figure}[h!]
-        \begin{tikzpicture}
-          \begin{axis}[xtick={0, 0.00125, 0.0025, 0.005, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32}, x tick label style={rotate=45, log ticks with fixed point},xmode=log, log basis x=2, xlabel=Perturbation Radius ($\epsilon$), ylabel=Accuracy, width=\linewidth, height=7cm,legend style={at={(0.95,0.95)},anchor=north east}]
-              
-          \addplot[color=red,mark=x] coordinates {
-            (0.00125, 0.687)
-            (0.0025, 0.216)
-            (0.005, 0.012)
-            (0.01, 0)
-          };
-          
-          \addplot[color=blue,mark=*] coordinates {
-            (0.00125, 0.795)
-            (0.0025, 0.685)
-            (0.005, 0.337)
-            (0.01, 0.022)
-          };
-
-          \addplot[color=red, domain=0.00125:0.01, dashed]{0.905};
-          \addplot[color=blue, domain=0.00125:0.01, dashed]{0.880};
-          
-          \legend{Without Attention,With Attention}
-          \end{axis}
-          \end{tikzpicture}
-        \caption{Clean- and robust-accuracy of ResNet-50 models for skin lesion classification.  Dashed lines represent clean-accuracy.}
-        \label{DermResNet50Robustness}
-      \end{figure}
 
       The models for diabetic retinopathy detection tell a slightly different story (Fig. \ref{DRResNet50Robustness}). These models were, overall, much more robust, requiring a perturbation of at least $\epsilon=0.01$ to reduce accuracy by 3\%. As in the skin lesion classification models, the model without attention has a slightly higher clean accuracy (0.832 vs. 0.818). It retains this very small lead until $\epsilon=0.02$, at which point, the accuracy of both models begins falling, but the model with attention does so a bit less dramatically. At the maximum perturbation radius tested ($\epsilon=0.32$) (Fig. \ref{example_dr_perturbation}), the accuracy of the model with attention is over 20 times higher than that of the model without.
 
-      \begin{figure}[h!]
-        \begin{tikzpicture}
-          \begin{axis}[xtick={0, 0.00125, 0.0025, 0.005, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32}, x tick label style={rotate=45, log ticks with fixed point},xmode=log, log basis x=2, xlabel=Perturbation Radius ($\epsilon$), ylabel=Accuracy, width=\linewidth, height=7cm,legend style={at={(0.05,0.05)},anchor=south west}]
-              
-          \addplot[color=red,mark=x] coordinates {
-            (0, 0.832)
-            (0.00125, 0.828)
-            (0.0025, 0.825)
-            (0.005, 0.819)
-            (0.01, 0.806)
-            (0.02, 0.778)
-            (0.04, 0.705)
-            (0.08, 0.506)
-            (0.16, 0.175)
-            (0.32, 0.014)
-          };
-          
-          \addplot[color=blue,mark=*] coordinates {
-            (0, 0.818)
-            (0.00125, 0.816)
-            (0.0025, 0.815)
-            (0.005, 0.813)
-            (0.01, 0.808)
-            (0.02, 0.8)
-            (0.04, 0.780)
-            (0.08, 0.733)
-            (0.16, 0.599)
-            (0.32, 0.287)
-          };
-
-          \addplot[color=red, domain=0.00125:0.32, dashed]{0.832};
-          \addplot[color=blue, domain=0.00125:0.32, dashed]{0.818};
-          
-          \legend{Without Attention,With Attention}
-          \end{axis}
-          \end{tikzpicture}
-        \caption{Clean- and robust-accuracy of ResNet-50 models for diabetic retinopathy detection. Dashed lines represent clean-accuracy.}
-        \label{DRResNet50Robustness}
-      \end{figure}
-
       The pneumothorax detection models, collectively, were even more robust than the diabetic retinopathy detection models (Fig. \ref{PneumoResNet50Robustness}). After perturbations of $\epsilon=0.32$ (Fig. \ref{example_pneumo_perturbation}), the accuracy of both models met at 0.805. Prior to this, the accuracy of the model without attention hovered 1-2\% above that of the model with attention. However, based on the trajectory of the models' accuracy with respect to $\epsilon$, perturbation radii higher than 0.32 would likely result in the model with attention leapfrogging the model without.
 
-      \begin{figure}[h!]
-        \begin{subfigure}{\linewidth}
-          \centering
-          $
-          \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/derm_unperturbed.jpg}
-          \end{array}
-          \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
-          \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/derm_e=0.01_difference.jpg}
-          \end{array}
-          \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
-          \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/derm_e=0.01.jpg}
-          \end{array}
-          $
-          \caption{An example of $\epsilon=0.01$ perturbation on the dermatoscopy dataset. 0.01 is the maximum perturbation radius used for this dataset.\\}
-          \label{example_derm_perturbation}
-        \end{subfigure}
-        
-        \begin{subfigure}{\linewidth}
-          \centering
-          $
-          \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/dr_unperturbed.jpg}
-          \end{array}
-          \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
-          \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/dr_e=0.32_difference.jpg}
-          \end{array}
-          \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
-          \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/dr_e=0.32.jpg}
-          \end{array}
-          $
-          \caption{An example of $\epsilon=0.32$ perturbation on the fundoscopy dataset. 0.32 is the maximum perturbation radius used for this dataset.\\}
-          \label{example_dr_perturbation}
-        \end{subfigure}
-        \begin{subfigure}{\linewidth}
-          \centering
-          $
-          \begin{array}{l}
-          \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/pneumo_unperturbed.jpg}
-          \end{array}
-          \mathlarger{\mathlarger{\mathlarger{\mathlarger{+}}}}
-          \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/pneumo_e=0.32_difference.jpg}
-          \end{array}
-          \mathlarger{\mathlarger{\mathlarger{\mathlarger{=}}}}
-          \begin{array}{l}
-            \includegraphics[width=0.26\linewidth]{graphics/ResNet-50/pneumo_e=0.32.jpg}
-          \end{array}
-          $
-          \caption{An example of $\epsilon=0.32$ perturbation on the chest x-ray dataset. 0.32 is the maximum perturbation radius used for this dataset.\\}
-          \label{example_pneumo_perturbation}
-        \end{subfigure}%
-        \caption{Perturbation examples}
-      \end{figure}
-
-      \begin{figure}[h!]
-        \begin{tikzpicture}
-          \begin{axis}[xtick={0, 0.00125, 0.0025, 0.005, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32}, x tick label style={rotate=45, log ticks with fixed point},xmode=log, log basis x=2, xlabel=Perturbation Radius ($\epsilon$), ylabel=Accuracy, width=\linewidth, height=7cm,legend style={at={(0.05,0.05)},anchor=south west}]
-              
-          \addplot[color=red,mark=x] coordinates {
-            (0.00125, 0.897)
-            (0.0025, 0.897)
-            (0.005, 0.896)
-            (0.01, 0.896)
-            (0.02, 0.894)
-            (0.04, 0.889)
-            (0.08, 0.881)
-            (0.16, 0.864)
-            (0.32, 0.805)
-          };
-          
-          \addplot[color=blue,mark=*] coordinates {
-            (0.00125, 0.883)
-            (0.0025, 0.883)
-            (0.005, 0.882)
-            (0.01, 0.882)
-            (0.02, 0.880)
-            (0.04, 0.877)
-            (0.08, 0.870)
-            (0.16, 0.853)
-            (0.32, 0.805)
-          };
-
-          \addplot[color=red, domain=0.00125:0.32, dashed]{0.897};
-          \addplot[color=blue, domain=0.00125:0.32, dashed]{0.883};
-          
-          \legend{Without Attention,With Attention}
-          \end{axis}
-          \end{tikzpicture}
-        \caption{Clean- and robust-accuracy of ResNet-50 models for pneumothorax detection. Dashed lines represent clean-accuracy.}
-        \label{PneumoResNet50Robustness}
-      \end{figure}
-
     \subsection{InceptionResNetV2 Models}
+
+      \input figures/IRV2DermPlot
+      \input figures/IRV2DRPlot
+      \input figures/IRV2PneumoPlot
+
+      Experiments with the InceptionResNetV2 architecture paint a slightly different picture. In all tasks, clean-accuracy for the baseline and attentive models was within 1\%. This result is, somewhat, at odds with those of Datta et al. (2021) \cite{AttentionSkinCancerClassification} which found soft attention to improve accuracy of InceptionResNetV2 (on HAM10000 \cite{HAM10000}) by ~3\%.
+
+      For the skin lesion classification and diabetic retinopathy detection tasks, the baseline and attentive architectures performed near-identically in adversarial scenarios. The diabetic retinopathy task slightly favored the baseline, whereas skin lesion classification slightly favored the attentive model; however, at most, there was a 6\% discrepancy between their accuracies ($\epsilon = 0.00125$).
+      
+      In the pneumothorax detection task, the model with attention performed significantly worse under adversarial scenarios. The model reached an unusable accuracy after the perturbation radius was pushed beyond 0.00125, while the baseline remained usable with a perturbation radius of 0.005.
+
   \section{Discussion}
     \subsection{Analysis of Perturbations and Activation Maps}
       In an attempt to better understand the principles and behaviors that led the CNNs with attention to perform better in both clean and adversarial scenarios, perturbation difference maps and Grad-CAM activation maps were generated for a select sample of images on each model. Individually, these difference maps and activation maps were unremarkable. However, a number of dataset specific patterns were noticed throughout the images used for this analysis.
       \subsubsection{ResNet-50 Models}
         While imperceptible in the final images, the perturbations for dermatoscopic and fundoscopic images were found to carry easily perceptible information about the source image, when the changes were scaled to a range of $[0,255]$. In these cases, the adversarial ``noise'' contained the shape of the lesion or eye. For dermatoscopic images, this shape was in the form of a densely perturbed ring enclosing a sparsely perturbed center (Fig. \ref{LesionShape}). This phenomenon was most visible when $\epsilon=0.00125$. For the fundoscopic images, this shape was represented by a sparsely perturbed ellipse. In the attacks generated for the model with attention, the shape of this ellipse occasionally diverged from the true shape of the eye (Fig. \ref{EyeShapeDivergence}).
 
-        \begin{figure}[h]
-          \centering
-          \begin{subfigure}{.4\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{graphics/ResNet-50/LesionOutline.pdf}
-            \caption{Shape of skin lesion found in adversarial ``noise''\\}
-            \label{LesionShape}
-          \end{subfigure}
-          \begin{subfigure}{.4\linewidth}
-            \centering
-            \includegraphics[width=\linewidth]{graphics/ResNet-50/EyeShapeDivergence.pdf}
-            \caption{Divergence from shape of eye\\}
-            \label{EyeShapeDivergence}
-          \end{subfigure}
-          \caption{Shape information carried over into perturbations}
-        \end{figure}
-
-        \begin{figure}[h]
-          \centering
-          \includegraphics[width=\linewidth]{graphics/ResNet-50/pneumo_with_attention.pdf}
-          \caption{Comparison of activation maps (with attention) for perturbed and unperturbed chest x-ray}
-          \label{PneumoWithAttention}
-        \end{figure}
-
-        \begin{figure}[h]
-          \centering
-          \includegraphics[width=\linewidth]{graphics/ResNet-50/different_maps.pdf}
-          \caption{Comparison of activation maps (without attention) for perturbed and unperturbed chest x-ray}
-          \label{DifferentMaps}
-        \end{figure}
+        \input figures/DRPerturbationDivergence
+        \input figures/ResNetPneumoWithAttentionActivation
+        \input figures/ResNetPneumoWithoutAttentionActivation
 
         In the attacks tailored to the fundoscopic image models, perturbations introduced dark splotchy patterns to the eye area (Fig. \ref{CottonWool}). Based on diagnostic literature, these spots could be ``attempts'' by the attack to emulate cotton-wool spots or hemorrhages, key indicators of diabetic retinopathy \cite{WillsEye}. Similar patterns appear in the perturbations for the chest x-ray model with attention (Fig. \ref{PneumoWithAttention}) (these spots are larger and less speckled), though these do not appear similar to the key indicators of pneumothoraces (air in pleural space, misplaced lung edge, less distinct lung markings, etc.) \cite{UnofficialGuide}, it remains unclear whether the attack could be emulating these features indirectly.
 
-        \begin{figure}[h]
-          \centering
-          \includegraphics[width=0.5\linewidth]{graphics/ResNet-50/cotton_wool.pdf}
-          \caption{Dark splotches in perturbation of fundoscopic images}
-          \label{CottonWool}
-        \end{figure}
+        \input figures/ResNetCottonWool
 
         While the activation maps for the dermatoscopic and fundoscopic image models were invariant to perturbation, the chest x-ray model without attention occasionally produced very different activation maps under adversarial attacks (Fig. \ref{DifferentMaps}). However, this was only true under successful attacks (of which there were few).
 

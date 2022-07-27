@@ -1,0 +1,31 @@
+\begin{figure}[h]
+    \begin{tikzpicture}
+      \begin{axis}[xtick={0, 0.0003125, 0.000625, 0.00125, 0.0025, 0.005, 0.01}, x tick label style={rotate=45, log ticks with fixed point},xmode=log, log basis x=2, xlabel=Perturbation Radius ($\epsilon$), ylabel=Accuracy, width=\linewidth, height=7cm,legend style={at={(0.95,0.95)},anchor=north east}]
+      
+      \addplot[color=red,mark=x] coordinates {
+        (0.0003125, 0.618)
+        (0.000625, 0.286)
+        (0.00125, 0.053)
+        (0.0025, 0.007)
+        (0.005, 0.0)
+        (0.01, 0.0)
+      };
+      
+      \addplot[color=blue,mark=*] coordinates {
+        (0.0003125, 0.590)
+        (0.000625, 0.255)
+        (0.00125, 0.046)
+        (0.0025, 0.0)
+        (0.005, 0.0)
+        (0.01, 0.0)
+      };
+
+      \addplot[color=red, domain=0.0003125:0.01, dashed]{0.889};
+      \addplot[color=blue, domain=0.0003125:0.01, dashed]{0.887};
+      
+      \legend{Without Attention,With Attention}
+      \end{axis}
+      \end{tikzpicture}
+    \caption{Clean- and robust-accuracy of InceptionResNetV2 models for diabetic retinopathy detection. Dashed lines represent clean-accuracy.}
+    \label{IRV2DRRobustness}
+  \end{figure}
