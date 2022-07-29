@@ -120,18 +120,6 @@ Hanxun Huang, Yisen Wang, Sarah~Monazam Erfani, Quanquan Gu, James Bailey, and
 ISIC.
 \newblock {The international skin imaging collaboration}.
 
-\bibitem{alphafold}
-John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov,
-  Olaf Ronneberger, Kathryn Tunyasuvunakool, Russ Bates, Augustin
-  {\v{Z}}{\'i}dek, Anna Potapenko, Alex Bridgland, Clemens Meyer, Simon A.~A.
-  Kohl, Andrew~J. Ballard, Andrew Cowie, Bernardino Romera-Paredes, Stanislav
-  Nikolov, Rishub Jain, Jonas Adler, Trevor Back, Stig Petersen, David Reiman,
-  Ellen Clancy, Michal Zielinski, Martin Steinegger, Michalina Pacholska, Tamas
-  Berghammer, Sebastian Bodenstein, David Silver, Oriol Vinyals, Andrew~W.
-  Senior, Koray Kavukcuoglu, Pushmeet Kohli, and Demis Hassabis.
-\newblock Highly accurate protein structure prediction with alphafold.
-\newblock {\em Nature}, 596(7873):583--589, Aug 2021.
-
 \bibitem{KaggleDR}
 Kaggle.
 \newblock {Diabetic Retinopathy Detection}, 02 2015.
@@ -208,6 +196,16 @@ Ramprasaath~R Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
 \newblock {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based
   Localization}.
 \newblock {\em arXiv}, 2016.
+
+\bibitem{alphafold}
+Andrew~W. Senior, Richard Evans, John Jumper, James Kirkpatrick, Laurent Sifre,
+  Tim Green, Chongli Qin, Augustin Žídek, Alexander W.~R. Nelson, Alex
+  Bridgland, Hugo Penedones, Stig Petersen, Karen Simonyan, Steve Crossan,
+  Pushmeet Kohli, David~T. Jones, David Silver, Koray Kavukcuoglu, and Demis
+  Hassabis.
+\newblock Improved protein structure prediction using potentials from deep
+  learning.
+\newblock {\em Nature}, 577(7792):706--710, 2020.
 
 \bibitem{RobustTransformers}
 Rulin Shao, Zhouxing Shi, Jinfeng Yi, Pin-Yu Chen, and Cho-Jui Hsieh.

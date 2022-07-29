@@ -5,32 +5,32 @@ The style file: ieee_fullname.bst
 Database file #1: egbib.bib
 You've used 44 entries,
             2120 wiz_defined-function locations,
-            835 strings with 15385 characters,
-and the built_in function-call counts, 19849 in all, are:
-= -- 1761
-> -- 1565
+            834 strings with 15062 characters,
+and the built_in function-call counts, 19382 in all, are:
+= -- 1731
+> -- 1490
 < -- 9
-+ -- 618
-- -- 572
-* -- 1660
-:= -- 3426
++ -- 588
+- -- 542
+* -- 1598
+:= -- 3336
 add.period$ -- 129
 call.type$ -- 44
-change.case$ -- 410
+change.case$ -- 395
 chr.to.int$ -- 0
 cite$ -- 44
 duplicate$ -- 552
 empty$ -- 1137
-format.name$ -- 572
-if$ -- 3908
+format.name$ -- 542
+if$ -- 3833
 int.to.chr$ -- 0
 int.to.str$ -- 44
 missing$ -- 40
 newline$ -- 218
 num.names$ -- 90
-pop$ -- 442
+pop$ -- 427
 preamble$ -- 1
-purify$ -- 368
+purify$ -- 353
 quote$ -- 0
 skip$ -- 427
 stack$ -- 0
